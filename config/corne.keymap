@@ -27,8 +27,7 @@
    &none &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y    &mt LSHIFT I   &mt LCTRL I &mt LALT O &mt LGUI P &none
    &none &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G      &kp H    &kp J          &kp K       &kp L      &kp SEMI   &none
    &none &kp Z      &kp X      &kp C       &kp V        &kp B      &kp N    &kp M          &kp COMMA   &kp DOT    &kp FSLH   &none
-                  // &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &mt LSHIFT ESC &lt NAVIGATION RET
-                  &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &mt LSHIFT ESC &none
+                  &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &mt LSHIFT ESC &lt NAVIGATION RET
                         >;
                 };
 
@@ -60,18 +59,18 @@
                         >;
                 };
 
-//                 navigation_layer {
-// // -----------------------------------------------------------------------------------------
-// // |      |     |     |     |     |     |   |  COPY  |  HOME    |  UP    |  END    |  PASTE   |      |
-// // |      |     |     |     |     |     |   |  PG UP |  LEFT    |  DOWN  |  RIGHT  |  PG DOWN |      |
-// // |      |     |     |     |     |     |   |  CUT   |  C_BSCP  |  BSCP  |  DEL    |  C_DEL   |      |
-// //                    |     |     |     |   |        |          |        |
-//                         bindings = <
-//    &none &trans &trans &trans &trans &trans   &kp K_COPY &kp HOME     &kp UP   &kp END   &kp K_PASTE &none
-//    &none &trans &trans &trans &trans &trans   &kp PG_UP  &kp LEFT     &kp DOWN &kp RIGHT &PG_DOWN    &none
-//    &none &trans &trans &trans &trans &trans   &kp K_CUT  &kp LC(BSCP) &kp BSCP &kp DEL   &kp LC(DEL) &none
-//                        &trans &trans &trans   &trans     &trans       &trans
-//                         >;
-//                 };
+                navigation_layer {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |  COPY  |  HOME    |  UP    |  END    |  PASTE   |      |
+// |      |     |     |     |     |     |   |  PG UP |  LEFT    |  DOWN  |  RIGHT  |  PG DOWN |      |
+// |      |     |     |     |     |     |   |  CUT   |  C_BSCP  |  BSCP  |  DEL    |  C_DEL   |      |
+//                    |     |     |     |   |        |          |        |
+                        bindings = <
+   &none &trans &trans &trans &trans &trans   &none      &kp HOME     &kp UP   &kp END   &none       &none
+   &none &trans &trans &trans &trans &trans   &kp PG_UP  &kp LEFT     &kp DOWN &kp RIGHT &PG_DOWN    &none
+   &none &trans &trans &trans &trans &trans   &none      &kp LC(BSCP) &kp BSCP &kp DEL   &kp LC(DEL) &none
+                       &trans &trans &trans   &trans     &trans       &trans
+                        >;
+                };
         };
 };
