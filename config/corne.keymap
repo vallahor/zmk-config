@@ -96,7 +96,7 @@
                         bindings = <
    &none &trans &trans &trans &trans &trans   &kp LC(C)   &kp HOME       &kp UP_ARROW   &kp END         &kp LC(V)     &none
    &none &trans &trans &trans &trans &trans   &kp PAGE_UP &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp PAGE_DOWN &none
-   &none &trans &trans &trans &trans &trans   &kp LC(X)   &kp BSPC       &kp DEL        &kp none        &kp none      &none
+   &none &trans &trans &trans &trans &trans   &kp LC(X)   &kp BSPC       &kp DEL        &none        &none      &none
                        &trans &trans &trans   &trans      &trans         &trans
                         >;
                 };
