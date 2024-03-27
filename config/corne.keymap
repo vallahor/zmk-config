@@ -15,12 +15,21 @@
 
 / {
     behaviors {
-        hm: balanced_homerow_mods {
+        // hm: balanced_homerow_mods {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <300>;    // <---[[moderate duration]]
+        //     quick-tap-ms = <0>;
+        //     flavor = "balanced";
+        //     bindings = <&kp>, <&kp>;
+        // };
+        hm: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <300>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -37,8 +46,7 @@
    &none &kp Q &kp W &kp E       &kp R        &kp T   &kp Y &hm LSHIFT  U &hm LCTRL I &kp O   &kp P    &none
    &none &kp A &kp S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J         &kp K       &kp L   &kp SEMI &none
    &none &kp Z &kp X &kp C       &kp V        &kp B   &kp N &kp M         &kp COMMA   &kp DOT &kp FSLH &none
-   &lt NUMBER TAB   &lt SYMBOL ESC  &kp LGUI      &kp BSPC &lt NAVIGATION SPACE &hm LSHIFT RET
-   // &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &lt NAVIGATION ESC &hm LSHIFT RET
+   &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &lt NAVIGATION ESC &hm LSHIFT RET
                         >;
                 };
 
