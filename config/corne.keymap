@@ -62,14 +62,14 @@
                 navigation_layer {
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |  COPY  |  HOME    |  UP    |  END    |  PASTE   |      |
-// |      |     |     |     |     |     |   |  PG UP |  LEFT    |  DOWN  |  RIGHT  |  PG DOWN |      |
+// |      |     |     |     |     |     |   |  PG UP |  LEFT    |  DOWN  |  RIGHT  |  PG DN   |      |
 // |      |     |     |     |     |     |   |  CUT   |  C_BSCP  |  BSCP  |  DEL    |  C_DEL   |      |
 //                    |     |     |     |   |        |          |        |
                         bindings = <
-   &none &trans &trans &trans &trans &trans   &kp LC(C)  &kp HOME     &kp UP   &kp END   &kp LC(V)   &none
-   &none &trans &trans &trans &trans &trans   &kp PG_UP  &kp LEFT     &kp DOWN &kp RIGHT &kp PG_DN   &none
-   &none &trans &trans &trans &trans &trans   &kp LC(X)  &kp LC(BSCP) &kp BSCP &kp DEL   &kp LC(DEL) &none
-                       &trans &trans &trans   &trans     &trans       &trans
+   &none &trans &trans &trans &trans &trans   &kp LC(C)   &kp HOME       &kp UP_ARROW   &kp END         &kp LC(V)     &none
+   &none &trans &trans &trans &trans &trans   &kp PAGE_UP &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp PAGE_DOWN &none
+   &none &trans &trans &trans &trans &trans   &kp LC(X)   &kp LC(BSPC)   &kp BSPC       &kp DEL         &kp LC(DEL)   &none
+                       &trans &trans &trans   &trans      &trans         &trans
                         >;
                 };
         };
