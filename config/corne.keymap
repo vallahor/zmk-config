@@ -29,33 +29,6 @@ default_layer {
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
-                        >;
-                };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
-                        >;
-                };
 
 //                 default_layer {
 // // -----------------------------------------------------------------------------------------
@@ -73,33 +46,33 @@ default_layer {
 //                         >;
 //                 };
 
-//                 number_layer {
-// // -----------------------------------------------------------------------------------------
-// // |      |  F1  |  F2  |  F3  |  F4  |     |   |  *  |  7  |  8  |  9  |  .  |      |
-// // |      |  F5  |  F6  |  F7  |  F8  |     |   |  +  |  4  |  5  |  6  |  ,  |      |
-// // |      |  F9  |  F10 |  F11 |  F12 |     |   |  -  |  1  |  2  |  3  |  /  |      |
-// //                        |     |     |     |   | RET |  0  | SPACE |
-//                         bindings = <
-//    &none &kp F1 &kp F2  &kp F3  &kp F4  &trans   &kp ASTRK &kp N7 &kp N8 &kp N9 &kp DOT   &none
-//    &none &kp F5 &kp F6  &kp F7  &kp F8  &trans   &kp PLUS  &kp N4 &kp N5 &kp N6 &kp COMMA &none
-//    &none &kp F9 &kp F10 &kp F11 &kp F12 &trans   &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH  &none
-//                         &trans  &trans  &trans   &kp RET   &kp N0 &kp SPACE
-//                         >;
-//                 };
+                number_layer {
+// -----------------------------------------------------------------------------------------
+// |      |  F1  |  F2  |  F3  |  F4  |     |   |  *  |  7  |  8  |  9  |  .  |      |
+// |      |  F5  |  F6  |  F7  |  F8  |     |   |  +  |  4  |  5  |  6  |  ,  |      |
+// |      |  F9  |  F10 |  F11 |  F12 |     |   |  -  |  1  |  2  |  3  |  /  |      |
+//                        |     |     |     |   | RET |  0  | SPACE |
+                        bindings = <
+   &none &kp F1 &kp F2  &kp F3  &kp F4  &trans   &kp ASTRK &kp N7 &kp N8 &kp N9 &kp DOT   &none
+   &none &kp F5 &kp F6  &kp F7  &kp F8  &trans   &kp PLUS  &kp N4 &kp N5 &kp N6 &kp COMMA &none
+   &none &kp F9 &kp F10 &kp F11 &kp F12 &trans   &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH  &none
+                        &trans  &trans  &trans   &kp RET   &kp N0 &kp SPACE
+                        >;
+                };
 
-//                 symbol_layer {
-// // -----------------------------------------------------------------------------------------
-// // |      |  !  |  @  |  #  |  $  |  \  |   |  '  |  [  |  (  |  )  |  ]  |      |
-// // |      |  %  |  ^  |  &  |  *  |  `  |   |  "  |  _  |  {  |  }  |  :  |      |
-// // |      |     |  ~  |  -  |  +  |     |   | "|" |  =  |  <  |  >  |  ?  |      |
-// //                    |     |     |     |   |     |     |     |
-//                         bindings = <
-//    &none &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp BSLH    &kp SQT  &kp LBKT  &kp LPAR &kp RPAR &kp RBKT  &none
-//    &none &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp GRAVE   &kp DQT  &kp UNDER &kp LBRC &kp RBRC &kp COLON &none
-//    &none &none     &kp TILDE &kp MINUS &kp PLUS  &none       &kp PIPE &kp EQUAL &kp LT   &kp GT   &kp QMARK &none
-//                              &trans    &trans    &trans      &trans   &trans    &trans
-//                         >;
-//                 };
+                symbol_layer {
+// -----------------------------------------------------------------------------------------
+// |      |  !  |  @  |  #  |  $  |  \  |   |  '  |  [  |  (  |  )  |  ]  |      |
+// |      |  %  |  ^  |  &  |  *  |  `  |   |  "  |  _  |  {  |  }  |  :  |      |
+// |      |     |  ~  |  -  |  +  |     |   | "|" |  =  |  <  |  >  |  ?  |      |
+//                    |     |     |     |   |     |     |     |
+                        bindings = <
+   &none &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp BSLH    &kp SQT  &kp LBKT  &kp LPAR &kp RPAR &kp RBKT  &none
+   &none &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp GRAVE   &kp DQT  &kp UNDER &kp LBRC &kp RBRC &kp COLON &none
+   &none &none     &kp TILDE &kp MINUS &kp PLUS  &none       &kp PIPE &kp EQUAL &kp LT   &kp GT   &kp QMARK &none
+                             &trans    &trans    &trans      &trans   &trans    &trans
+                        >;
+                };
 
 //                 navigation_layer {
 // // -----------------------------------------------------------------------------------------
