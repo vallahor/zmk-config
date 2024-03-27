@@ -14,13 +14,16 @@
 #define NAVIGATION 3
 
 / {
-    &mt {
-        tapping-term-ms = <400>;
-    }
-
-    &lt {
-        tapping-term-ms = <400>;
-    }
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -31,10 +34,10 @@
 // | none |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | none |
 // | TAB / Number | SPC / Symbol | LGUI |   | BSPC | ESC / SHIFT  | RET / NAVIGATION |
                         bindings = <
-   &none &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y    &mt LSHIFT I   &mt LCTRL I &mt LALT O &mt LGUI P &none
-   &none &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G      &kp H    &kp J          &kp K       &kp L      &kp SEMI   &none
+   &none &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y    &hm LSHIFT I   &hm LCTRL I &hm LALT O &hm LGUI P &none
+   &none &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G      &kp H    &kp J          &kp K       &kp L      &kp SEMI   &none
    &none &kp Z      &kp X      &kp C       &kp V        &kp B      &kp N    &kp M          &kp COMMA   &kp DOT    &kp FSLH   &none
-                  &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &mt LSHIFT ESC &lt NAVIGATION RET
+                  &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &hm LSHIFT ESC &lt NAVIGATION RET
                         >;
                 };
 
