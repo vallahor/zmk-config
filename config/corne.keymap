@@ -74,18 +74,18 @@ default_layer {
                         >;
                 };
 
-//                 navigation_layer {
-// // -----------------------------------------------------------------------------------------
-// // |      |     |     |     |     |     |   |  COPY  |  HOME    |  UP    |  END    |  PASTE   |      |
-// // |      |     |     |     |     |     |   |  PG UP |  LEFT    |  DOWN  |  RIGHT  |  PG DOWN |      |
-// // |      |     |     |     |     |     |   |  CUT   |  C_BSCP  |  BSCP  |  DEL    |  C_DEL   |      |
-// //                    |     |     |     |   |        |          |        |
-//                         bindings = <
-//    &none &trans &trans &trans &trans &trans   &kp K_COPY &kp HOME     &kp UP   &kp END   &kp K_PASTE &none
-//    &none &trans &trans &trans &trans &trans   &kp PG_UP  &kp LEFT     &kp DOWN &kp RIGHT &PG_DOWN    &none
-//    &none &trans &trans &trans &trans &trans   &kp K_CUT  &kp LC(BSCP) &kp BSCP &kp DEL   &kp LC(DEL) &none
-//                        &trans &trans &trans   &trans     &trans       &trans
-//                         >;
-//                 };
+                navigation_layer {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |  COPY  |  HOME    |  UP    |  END    |  PASTE   |      |
+// |      |     |     |     |     |     |   |  PG UP |  LEFT    |  DOWN  |  RIGHT  |  PG DOWN |      |
+// |      |     |     |     |     |     |   |  CUT   |  C_BSCP  |  BSCP  |  DEL    |  C_DEL   |      |
+//                    |     |     |     |   |        |          |        |
+                        bindings = <
+   &none &trans &trans &trans &trans &trans   &kp K_COPY &kp HOME     &kp UP   &kp END   &kp K_PASTE &none
+   &none &trans &trans &trans &trans &trans   &kp PG_UP  &kp LEFT     &kp DOWN &kp RIGHT &PG_DOWN    &none
+   &none &trans &trans &trans &trans &trans   &kp K_CUT  &kp LC(BSCP) &kp BSCP &kp DEL   &kp LC(DEL) &none
+                       &trans &trans &trans   &trans     &trans       &trans
+                        >;
+                };
         };
 };
