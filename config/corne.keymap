@@ -13,7 +13,7 @@
 #define SYMBOL
 #define NAVIGATION
 
-{
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -24,8 +24,10 @@
 // | none |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | none |
 // | TAB / Number | SPC / Symbol | LGUI |   | BSPC | ESC / SHIFT  | RET / NAVIGATION |
                         bindings = <
-   &none &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y    &mt LSHIFT I   &mt LCTRL I &mt LALT O &mt LGUI P &none
-   &none &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G      &kp H    &kp J          &kp K       &kp L      &kp SEMI   &none
+   // &none &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y    &mt LSHIFT I   &mt LCTRL I &mt LALT O &mt LGUI P &none
+   &none &kp Q      &kp W      &kp E       &kp R        &kp T      &kp Y    &kp I   &kp I &kp O &kp P &none
+   // &none &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G      &kp H    &kp J          &kp K       &kp L      &kp SEMI   &none
+   &none &kp A &kp S &kp D &kp F &kp G      &kp H    &kp J          &kp K       &kp L      &kp SEMI   &none
    &none &kp Z      &kp X      &kp C       &kp V        &kp B      &kp N    &kp M          &kp COMMA   &kp DOT    &kp FSLH   &none
                   &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &mt LSHIFT ESC &lt NAVIGATION RET
                         >;
