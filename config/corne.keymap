@@ -37,8 +37,7 @@
    &none &kp Q &kp W &kp E       &kp R        &kp T   &kp Y &hm LSHIFT  U &hm LCTRL I &kp O   &kp P    &none
    &none &kp A &kp S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &kp J         &kp K       &kp L   &kp SEMI &none
    &none &kp Z &kp X &kp C       &kp V        &kp B   &kp N &kp M         &kp COMMA   &kp DOT &kp FSLH &none
-   &lt SYMBOL SPACE &lt NUMBER TAB &kp LGUI   &kp BSPC &hm LSHIFT RET     &lt NAVIGATION ESC
- // &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &hm LSHIFT ESC &lt NAVIGATION RET
+   &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &lt NAVIGATION ESC &hm LSHIFT RET
                         >;
                 };
 
