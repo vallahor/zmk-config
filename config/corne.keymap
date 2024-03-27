@@ -51,7 +51,7 @@
    &none &kp F1 &kp F2  &kp F3  &kp F4  &trans   &kp ASTRK &kp N7 &kp N8 &kp N9 &kp DOT   &none
    &none &kp F5 &kp F6  &kp F7  &kp F8  &trans   &kp PLUS  &kp N4 &kp N5 &kp N6 &kp COMMA &none
    &none &kp F9 &kp F10 &kp F11 &kp F12 &trans   &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH  &none
-                        &trans  &trans  &trans   &kp RET   &kp SPACE &kp N0
+                        &trans  &trans  &trans   &kp RET   &kp N0 &kp SPACE
                         >;
                 };
 
