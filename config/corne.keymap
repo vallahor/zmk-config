@@ -19,7 +19,7 @@
     timeout-ms = <75>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-    layers = <0>; \
+    layers = <DEFAULT>; \
   };
 
 / {
@@ -75,15 +75,15 @@
 
                 symbol_layer {
 // -----------------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  \  |   |  '  |  [  |  (  |  )  |  ]  |      |
-// |      |  %  |  ^  |  &  |  *  |  `  |   |  "  |  _  |  {  |  }  |  :  |      |
+// |      |  !  |  @  |  #  |  $  |  `  |   |  '  |  [  |  (  |  )  |  ]  |      |
+// |      |  %  |  ^  |  &  |  *  |  \  |   |  "  |  _  |  {  |  }  |  :  |      |
 // |      |     |  ~  |  -  |  +  |     |   | "|" |  =  |  <  |  >  |  ?  |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &none &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp BSLH    &kp SQT  &kp LBKT  &kp LPAR &kp RPAR &kp RBKT  &none
-   &none &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp GRAVE   &kp DQT  &kp UNDER &kp LBRC &kp RBRC &kp COLON &none
-   &none &none     &kp TILDE &kp MINUS &kp PLUS  &none       &kp PIPE &kp EQUAL &kp LT   &kp GT   &kp QMARK &none
-                             &trans    &trans    &trans      &trans   &trans    &trans
+   &none &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp GRAVE  &kp SQT  &kp LBKT  &kp LPAR &kp RPAR &kp RBKT  &none
+   &none &kp PRCNT &kp CARET &kp AMPS  &kp ASTRK &kp BSLH   &kp DQT  &kp UNDER &kp LBRC &kp RBRC &kp COLON &none
+   &none &none     &kp TILDE &kp MINUS &kp PLUS  &none      &kp PIPE &kp EQUAL &kp LT   &kp GT   &kp QMARK &none
+                             &trans    &trans    &trans     &trans   &kp SPACE    &none
                         >;
                 };
 
