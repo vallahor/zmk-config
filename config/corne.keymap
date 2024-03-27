@@ -13,16 +13,17 @@
 #define SYMBOL 2
 #define NAVIGATION 3
 
+// https://joshinator.de/posts/zmk-combo-helper/
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <75>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
 / {
         behaviors {
-            // hm: balanced_homerow_mods {
-            //     compatible = "zmk,behavior-hold-tap";
-            //     #binding-cells = <2>;
-            //     tapping-term-ms = <300>;    // <---[[moderate duration]]
-            //     quick-tap-ms = <0>;
-            //     flavor = "balanced";
-            //     bindings = <&kp>, <&kp>;
-            // };
             hm: require_prior_idle {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
@@ -36,12 +37,9 @@
 
         combos {
             compatible = "zmk,combos";
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <19 20>;
-                bindings = <&kp ESC>;
-                layers = <0>;
-            };
+            COMBO(esc, &kp ESC, 19 20)
+            COMBO(number, &kp NUMBER, 13 14)
+            COMBO(enter, &kp RET, 20 21)
         };
 
         keymap {
@@ -57,7 +55,7 @@
    &none &kp Q &kp W &kp E       &kp R        &kp T   &kp Y &kp  U &kp I &kp O   &kp P    &none
    &none &kp A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G   &kp H &hm LSHIFT J         &hm LCTRL K       &hm LALT L   &kp SEMI &none
    &none &kp Z &kp X &kp C       &kp V        &kp B   &kp N &kp M         &kp COMMA   &kp DOT &kp FSLH &none
-   &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp BSPC &lt NAVIGATION ESC &hm LSHIFT RET
+   &lt NUMBER TAB   &lt SYMBOL SPACE  &kp LGUI      &kp LALT &kp NAVIGATION &hm LSHIFT RET
                         >;
                 };
 
