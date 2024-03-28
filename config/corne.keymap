@@ -30,7 +30,7 @@
                 flavor = "tap-preferred";
                 tapping-term-ms = <200>;
                 quick-tap-ms = <200>;
-                require-prior-idle-ms = <125>;
+                require-prior-idle-ms = <175>;
                 bindings = <&kp>, <&kp>;
             };
         };
@@ -39,6 +39,8 @@
             compatible = "zmk,combos";
             COMBO(esc, &kp ESC, 19 20)
             COMBO(enter, &kp RET, 20 21)
+            COMBO(gui_left, &kp LGUI, 2 3)
+            COMBO(gui_right, &kp LGUI, 7 8)
             COMBO(number, &mo NUMBER, 14 15)
         };
 
