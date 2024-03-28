@@ -40,6 +40,7 @@
             COMBO(esc, &kp ESC, 19 20)
             COMBO(enter, &kp RET, 20 21)
             COMBO(number, &mo NUMBER, 14 15)
+            COMBO(caps, &kt CAPS, 19 21)
         };
 
         keymap {
