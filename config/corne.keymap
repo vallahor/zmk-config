@@ -41,6 +41,7 @@
             COMBO(enter, &kp RET, 20 21)
             COMBO(shift, &kt LSHIFT, 19 21)
 
+            COMBO(tab, &kp TAB, 15 16)
             COMBO(number, &mo NUMBER, 14 15)
         };
 
