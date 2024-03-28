@@ -49,14 +49,14 @@
 
             combo_gui_right {
                 timeout-ms = <50>;
-                key-positions = <19 8 21>;
+                key-positions = <19 8 9>;
                 bindings = <&kp LGUI>;
                 layers = <DEFAULT>;
             };
 
             combo_gui_left {
                 timeout-ms = <50>;
-                key-positions = <14 2 16>;
+                key-positions = <1 2 16>;
                 bindings = <&kp LGUI>;
                 layers = <DEFAULT>;
             };
