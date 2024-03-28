@@ -16,7 +16,7 @@
 // https://joshinator.de/posts/zmk-combo-helper/
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <75>; \
+    timeout-ms = <100>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <DEFAULT>; \
@@ -40,7 +40,7 @@
             COMBO(esc, &kp ESC, 19 20)
             COMBO(enter, &kp RET, 20 21)
             COMBO(gui_left, &kp LGUI, 2 3)
-            COMBO(gui_right, &kp LGUI, 7 8)
+            COMBO(gui_right, &kp LGUI, 8 9)
             COMBO(number, &mo NUMBER, 14 15)
         };
 
