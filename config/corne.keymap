@@ -16,7 +16,7 @@
 // https://joshinator.de/posts/zmk-combo-helper/
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <100>; \
+    timeout-ms = <75>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <DEFAULT>; \
