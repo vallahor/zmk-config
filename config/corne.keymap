@@ -27,10 +27,11 @@
             hm: require_prior_idle {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                flavor = "tap-preferred";
+                flavor = "hold-preferred";
+                // flavor = "tap-preferred";
                 tapping-term-ms = <200>;
                 quick-tap-ms = <200>;
-                require-prior-idle-ms = <150>;
+                require-prior-idle-ms = <100>;
                 bindings = <&kp>, <&kp>;
             };
         };
