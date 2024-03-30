@@ -49,19 +49,33 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>; // jk
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <BASE>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>; // kl
             timeout-ms = <50>;
-            layers = <0 2>;
+            layers = <BASE NAVIGATION>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>; // df
+            timeout-ms = <50>;
+            layers = <BASE>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        delete {
+            bindings = <&kp DEL>;
+            key-positions = <32 33>;
             timeout-ms = <50>;
             layers = <0>;
         };
