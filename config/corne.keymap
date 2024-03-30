@@ -12,16 +12,6 @@
 #define NAVIGATION 2
 #define OTHER 3
 
-// https://joshinator.de/posts/zmk-combo-helper/
-
-#define COMBO(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    timeout-ms = <75>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <BASE>; \
-  };
-
 / {
     behaviors {
         hmr: hmr {
@@ -41,10 +31,6 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(esc, &kp ESC, 19 20) // jk
-        COMBO(enter, &kp RET, 20 21) // kl
-        COMBO(tab, &kp TAB, 15 16) // df
-
         combo_gui_right {
             timeout-ms = <50>;
             key-positions = <19 8 9>; // jio
@@ -57,6 +43,27 @@
             key-positions = <2 3 16>; // wef
             bindings = <&kp LGUI>;
             layers = <BASE>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <19 20>; // jk
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>; // kl
+            timeout-ms = <50>;
+            layers = <0 2>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>; // df
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
@@ -71,10 +78,10 @@
             // | TAB / Number | SPC / Symbol | none |   | none | NAVIGATION | SHIFT |
 
             bindings = <
-&none  &kp Q  &kp W        &kp E           &kp R             &kp T      &kp Y  &kp U              &kp I                &kp O            &kp P     &none
-&none  &kp A  &hmr LALT S  &hmr LCTRL D    &hmr LSHIFT F     &kp G      &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X        &kp C           &kp V             &kp B      &kp N  &kp M              &kp COMMA            &kp DOT          &kp FSLH  &none
-                           &kp TAB  &lt SYMBOL SPACE  &kp RET    &none  &mo NAVIGATION     &kp LSHIFT
+&none  &kp Q  &kp W        &kp E         &kp R             &kp T      &kp Y  &kp U              &kp I                &kp O            &kp P     &none
+&none  &kp A  &hmr LALT S  &hmr LCTRL D  &hmr LSHIFT F     &kp G      &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
+&none  &kp Z  &kp X        &kp C         &kp V             &kp B      &kp N  &kp M              &kp COMMA            &kp DOT          &kp FSLH  &none
+                           &kp TAB       &lt SYMBOL SPACE  &kp RET    &none  &mo NAVIGATION     &kp LSHIFT
             >;
         };
 
@@ -94,12 +101,11 @@
         };
 
         navigation_layer {
-
             bindings = <
-&none  &kp N1  &kp N2     &kp N3     &kp N4      &kp N5    &kp N6    &kp N7         &kp N8   &kp N9     &kp N0         &none
-&none  &kp TAB &none      &kp LCTRL  &kp LSHIFT  &none     &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp PAGE_UP    &none
-&none  &none   &kp LC(X)  &kp LC(C)  &kp LC(V)   &none     &kp HOME  &kp BACKSPACE  &kp DEL  &kp END    &kp PAGE_DOWN  &none
-                          &none      &kp SPACE   &none     &none     &trans         &none
+&none  &kp N1   &kp N2     &kp N3     &kp N4      &kp N5    &kp N6    &kp N7         &kp N8   &kp N9     &kp N0         &none
+&none  &kp TAB  &none      &kp LCTRL  &kp LSHIFT  &none     &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp PAGE_UP    &none
+&none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)   &none     &kp HOME  &kp BACKSPACE  &kp DEL  &kp END    &kp PAGE_DOWN  &none
+                           &none      &kp SPACE   &none     &none     &trans         &none
             >;
         };
 
