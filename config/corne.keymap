@@ -36,14 +36,6 @@
             };
         };
 
-        conditional_layers {
-            compatible = "zmk,conditional-layers";
-            tri_layer {
-                if-layers = <SYMBOL NAVIGATION>;
-                then-layer = <NUMBER>;
-            };
-        };
-
         combos {
             compatible = "zmk,combos";
             COMBO(esc, &kp ESC, 19 20) // jk
