@@ -25,19 +25,6 @@
 
 / {
     behaviors {
-        hml: hml {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <200>;
-            bindings = <&kp>, <&kp>;
-
-            label = "HML";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -87,10 +74,10 @@
             // | TAB / Number | SPC / Symbol | none |   | none | NAVIGATION | SHIFT |
 
             bindings = <
-&none  &kp Q  &kp W        &kp E           &kp R             &kp T    &kp Y  &kp U              &kp I                &kp O            &kp P     &none
-&none  &kp A  &hml LALT S  &hml LCTRL D    &hml LSHIFT F     &kp G    &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X        &kp C           &kp V             &kp B    &kp N  &kp M              &kp COMMA            &kp DOT          &kp FSLH  &none
-                           &lt NUMBER TAB  &lt SYMBOL SPACE  &none    &none  &mo NAVIGATION     &kp LSHIFT
+&none  &kp Q  &kp W        &kp E           &kp R             &kp T    &kp Y   &kp U              &kp I                &kp O            &kp P     &none
+&none  &kp A  &hmr LALT S  &hmr LCTRL D    &hmr LSHIFT F     &kp G    &kp H   &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
+&none  &kp Z  &kp X        &kp C           &kp V             &kp B    &kp N   &kp M              &kp COMMA            &kp DOT          &kp FSLH  &none
+                           &lt NUMBER TAB  &lt SYMBOL SPACE  &kp RET  &kp RET &kp LSHIFT         &mo NAVIGATION
             >;
         };
 
