@@ -7,11 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#define BASE 0
-#define SYMBOL 1
-#define NAVIGATION 2
-#define OTHER 3
-
 / {
     behaviors {
         hmr: hmr {
@@ -42,7 +37,7 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>; // jk
             timeout-ms = <50>;
-            layers = <BASE>;
+            layers = <0>;
         };
 
         backspace {
@@ -84,7 +79,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             // -----------------------------------------------------------------------------------------
             // | none |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | none |
             // | none |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | none |
@@ -99,7 +94,7 @@
             >;
         };
 
-        symbol_layer {
+        sym_layer {
             // -----------------------------------------------------------------------------------------
             // |      |  '  | "|" |  !  |  "  |  `  |   |  ^  |  [  |  (  |  )  |  ]  |      |
             // |      |  #  |  @  |  &  |  *  |  $  |   |  %  |  _  |  {  |  }  |  :  |      |
@@ -114,7 +109,7 @@
             >;
         };
 
-        navigation_layer {
+        nav_layer {
             bindings = <
 &none  &kp N1   &kp N2     &kp N3     &kp N4      &kp N5    &kp N6    &kp N7         &kp N8   &kp N9     &kp N0         &none
 &none  &kp TAB  &none      &kp LCTRL  &kp LSHIFT  &none     &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp PAGE_UP    &none
@@ -123,7 +118,7 @@
             >;
         };
 
-        other_layer {
+        fn_layer {
             // -----------------------------------------------------------------------------------------
             // |      |  F1  |  F2  |  F3  |  F4  |     |   |  PSCRN  |     |     |     |     |      |
             // |      |  F5  |  F6  |  F7  |  F8  |     |   |         |     |     |     |     |      |
@@ -131,11 +126,20 @@
             //                        |     |     |     |   |         |     |  |
 
             bindings = <
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &none    &kp PSCRN  &none  &none  &none  &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &none    &none      &none  &none  &none  &none  &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &none    &none      &none  &none  &none  &none  &none
-                        &none    &trans   &none    &none      &none  &none
+&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &kp F11  &kp F12  &kp F7  &none   &none     &none   &none   &none   &none   &none    &none
+&none  &none    &none    &nonw   &none   &none     &none   &none   &none   &none   &none    &none
+                         &none   &trans  &none     &none   &none   &none
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        fn_layer_cond {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
