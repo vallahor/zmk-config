@@ -72,6 +72,13 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
