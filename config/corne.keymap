@@ -36,28 +36,28 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>; // jk
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
 
         delete {
             bindings = <&kp DEL>;
             key-positions = <32 33>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0 2>;
         };
 
@@ -71,7 +71,7 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
     };
@@ -84,7 +84,7 @@
             // | none |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | none |
             // | none |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | none |
             // | none |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | none |
-            // | TAB / Number | SPC / Symbol | none |   | none | NAVIGATION | SHIFT |
+            // | SHIFT | SPC / Symbol | none |   | none | NAVIGATION | SHIFT |
 
             bindings = <
 &none  &kp Q  &kp W        &kp E         &kp R          &kp T    &kp Y  &kp U              &kp I                &kp O            &kp P     &none
@@ -99,13 +99,13 @@
             // |      |  '  | "|" |  !  |  "  |  `  |   |  ^  |  [  |  (  |  )  |  ]  |      |
             // |      |  #  |  @  |  &  |  *  |  $  |   |  %  |  _  |  {  |  }  |  :  |      |
             // |      |     |  ~  |  -  |  +  |     |   |  \  |  =  |  <  |  >  |  ?  |      |
-            //                    |     |     |     |   |     |  SPACE   |     |
+            //                    |     |     |     |   |     |          |     |
 
             bindings = <
 &none  &kp SQT   &kp PIPE   &kp EXCL   &kp DQT    &kp GRAVE    &kp CARET  &kp LBKT   &kp LPAR  &kp RPAR  &kp RBKT   &none
 &none  &kp HASH  &kp AT     &kp AMPS   &kp ASTRK  &kp DLLR     &kp PRCNT  &kp UNDER  &kp LBRC  &kp RBRC  &kp COLON  &none
 &none  &none     &kp TILDE  &kp MINUS  &kp PLUS   &none        &kp BSLH   &kp EQUAL  &kp LT    &kp GT    &kp QMARK  &none
-                            &none      &trans     &none        &none      &kp SPACE  &none
+                            &none      &trans     &none        &none      &trans  &none
             >;
         };
 
@@ -119,17 +119,11 @@
         };
 
         fn_layer {
-            // -----------------------------------------------------------------------------------------
-            // |      |  F1  |  F2  |  F3  |  F4  |     |   |  PSCRN  |     |     |     |     |      |
-            // |      |  F5  |  F6  |  F7  |  F8  |     |   |         |     |     |     |     |      |
-            // |      |  F9  |  F10 |  F11 |  F12 |     |   |         |     |     |     |     |      |
-            //                        |     |     |     |   |         |     |  |
-
             bindings = <
 &none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
 &none  &kp F11  &kp F12  &none   &none   &none     &none   &none   &none   &none   &none    &none
 &none  &none    &none    &none   &none   &none     &none   &none   &none   &none   &none    &none
-                         &none   &trans  &none     &none   &none   &none
+                         &none   &none  &none     &none   &none   &none
             >;
         };
     };
