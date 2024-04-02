@@ -58,27 +58,27 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <100>;
+            timeout-ms = <125>;
             layers = <0>;
         };
 
         semi {
             bindings = <&kp SEMI>;
             key-positions = <32 33>;
-            timeout-ms = <100>;
+            timeout-ms = <125>;
             layers = <0>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
+        ctrl_right {
+            bindings = <&kp LCTRL>;
             key-positions = <20 21>;
             timeout-ms = <75>;
             layers = <0 2>;
         };
 
-        shift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <19 21>;
+        caps_word_toggle {
+            bindings = <&caps_word>;
+            key-positions = <19 21 8>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -90,6 +90,13 @@
             layers = <0>;
         };
 
+        ctrl_left {
+            bindings = <&kp LCTRL>;
+            key-positions = <14 15>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
         shift_left {
             bindings = <&kp LSHIFT>;
             key-positions = <16 14>;
@@ -97,11 +104,11 @@
             layers = <0>;
         };
 
-        ctrl_left {
-            bindings = <&kp LCTRL>;
-            key-positions = <15 14>;
-            timeout-ms = <75>;
-            layers = <0 2>;
+        shift_right {
+            bindings = <&kp LSHIFT>;
+            key-positions = <19 21>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
@@ -116,9 +123,9 @@
             // | SHIFT | SPC / Symbol | none |   | none | NAVIGATION | SHIFT |
 
             bindings = <
-&none  &kp Q  &kp W        &kp E         &kp R          &kp T    &kp Y  &kp U              &kp I                &kp O            &kp P     &none
-&none  &kp A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G    &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X        &kp C         &kp V          &kp B    &kp N  &kp M              &kp COMMA            &kp DOT          &kp FSLH  &none
+&none  &kp Q  &kp W        &kp E         &kp R          &kp T    &kp Y  &kp U              &kp I                &kp O            &kp P      &none
+&none  &kp A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G    &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp ENTER  &none
+&none  &kp Z  &kp X        &kp C         &kp V          &kp B    &kp N  &kp M              &kp COMMA            &kp DOT          &kp FSLH   &none
                            &kp LSHIFT    &lt 2 SPACE    &none    &none  &mo 1              &kp LEFT_GUI
             >;
         };
