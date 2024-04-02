@@ -23,13 +23,6 @@
             hold-trigger-on-release;
         };
 
-        caps_word: caps_word {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_WORD";
-            #binding-cells = <0>;
-            continue-list = <UNDERSCORE>;
-        };
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -42,6 +35,13 @@
             label = "HML";
             hold-trigger-on-release;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
+        };
+
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE>;
         };
     };
 
@@ -103,7 +103,7 @@
 
             bindings = <
 &none  &kp Q  &kp W            &kp E         &kp R          &kp T    &kp Y  &kp U              &kp I                &kp O            &kp P     &none
-&none  &kp A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G    &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
+&none  &hml LSHIFT A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G    &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LSHIFT SEMI  &none
 &none  &kp Z  &kp X            &kp C         &kp V          &kp B    &kp N  &kp M              &kp COMMA            &kp DOT          &kp FSLH  &none
                                &kp LSHIFT    &lt 2 SPACE    &none    &none  &mo 1              &kp LEFT_GUI
             >;
