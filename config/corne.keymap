@@ -63,18 +63,18 @@
         };
 
         delete {
-            bindings = <&kp ENTER>;
+            bindings = <&kp DEL>;
             key-positions = <32 33>;
             timeout-ms = <125>;
             layers = <0>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
+        // enter {
+        //     bindings = <&kp ENTER>;
+        //     key-positions = <20 21>;
+        //     timeout-ms = <75>;
+        //     layers = <0 2>;
+        // };
 
         caps_word_toggle {
             bindings = <&caps_word>;
@@ -86,21 +86,21 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
 
         shift_left {
             bindings = <&kp LSHIFT>;
             key-positions = <16 14>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
 
         shift_right {
             bindings = <&kp LSHIFT>;
             key-positions = <19 21>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
     };
@@ -119,7 +119,7 @@
 &none  &kp Q  &kp W        &kp E         &kp R        &kp T    &kp Y  &kp U  &kp I                &kp O            &kp P     &none
 &none  &kp A  &hml LALT S  &hml LCTRL D  &kp F        &kp G    &kp H  &kp J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
 &none  &kp Z  &kp X        &kp C         &kp V        &kp B    &kp N  &kp M  &kp COMMA            &kp DOT          &kp FSLH  &none
-                           &kp LSHIFT    &lt 2 SPACE  &none    &none  &mo 1  &kp LEFT_GUI
+                           &kp LSHIFT    &lt 2 SPACE  &none    &none  &lt 1 RET &kp LEFT_GUI
             >;
         };
 
@@ -140,10 +140,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp N1   &kp N2     &kp N3     &kp N4      &kp N5       &kp N6    &kp N7         &kp N8   &kp N9     &kp N0     &none
-&none  &kp TAB  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PG_UP    &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp ENTER  &none
-&none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp PG_DN    &kp HOME  &kp BACKSPACE  &kp DEL  &kp END    &none      &none
-                           &none      &trans      &none        &none     &trans         &trans
+&none  &kp N1   &kp N2     &kp N3     &kp N4      &kp N5    &kp N6    &kp N7         &kp N8   &kp N9     &kp N0         &none
+&none  &kp TAB  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PAGE_UP       &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp RET    &none
+&none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp PAGE_DOWN     &kp HOME  &kp BACKSPACE  &kp DEL  &kp END    &none  &none
+                           &none      &trans      &none     &none     &trans         &trans
             >;
         };
 
