@@ -63,7 +63,7 @@
         };
 
         delete {
-            bindings = <&kp DEL>;
+            bindings = <&kp ENTER>;
             key-positions = <32 33>;
             timeout-ms = <125>;
             layers = <0>;
@@ -72,8 +72,8 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
-            timeout-ms = <75>;
-            layers = <0 2>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
 
         caps_word_toggle {
@@ -86,21 +86,21 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>;
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
         shift_left {
             bindings = <&kp LSHIFT>;
             key-positions = <16 14>;
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
         shift_right {
             bindings = <&kp LSHIFT>;
             key-positions = <19 21>;
-            timeout-ms = <75>;
+            timeout-ms = <50>;
             layers = <0>;
         };
     };
@@ -140,10 +140,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp N1   &kp N2     &kp N3     &kp N4      &kp N5    &kp N6    &kp N7         &kp N8   &kp N9     &kp N0         &none
-&none  &kp TAB  &kp LALT   &kp LCTRL  &kp LSHIFT  &none     &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp PAGE_UP    &none
-&none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)   &none     &kp HOME  &kp BACKSPACE  &kp DEL  &kp END    &kp PAGE_DOWN  &none
-                           &none      &trans      &none     &none     &trans         &trans
+&none  &kp N1   &kp N2     &kp N3     &kp N4      &kp N5       &kp N6    &kp N7         &kp N8   &kp N9     &kp N0     &none
+&none  &kp TAB  &kp LALT   &kp LCTRL  &kp LSHIFT  &kp PG_UP    &kp LEFT  &kp DOWN       &kp UP   &kp RIGHT  &kp ENTER  &none
+&none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp PG_DN    &kp HOME  &kp BACKSPACE  &kp DEL  &kp END    &none      &none
+                           &none      &trans      &none        &none     &trans         &trans
             >;
         };
 
