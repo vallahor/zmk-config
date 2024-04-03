@@ -13,9 +13,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             label = "HMR";
@@ -27,9 +27,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
             label = "HML";
@@ -131,10 +131,10 @@
             //                    |     |     |     |   |     |          |     |
 
             bindings = <
-&none  &kp SQT   &kp PIPE   &kp EXCL   &kp DQT    &kp GRAVE    &kp DOLLAR  &kp LBKT   &kp LPAR  &kp RPAR  &kp RBKT   &none
-&none  &kp HASH  &kp AT     &kp AMPS   &kp ASTRK  &kp CARET    &kp PRCNT   &kp UNDER  &kp LBRC  &kp RBRC  &kp COLON  &none
-&none  &none     &kp TILDE  &kp MINUS  &kp PLUS   &none        &kp BSLH    &kp EQUAL  &kp LT    &kp GT    &kp QMARK  &none
-                            &none      &trans     &none        &none       &trans     &none
+&none  &kp SQT   &kp EXCL   &kp PERCENT  &kp DQT    &kp PIPE     &kp GRAVE   &kp LBKT   &kp LPAR  &kp RPAR  &kp RBKT   &none
+&none  &kp HASH  &kp AT     &kp AMPS     &kp ASTRK  &kp CARET    &kp DOLLAR  &kp UNDER  &kp LBRC  &kp RBRC  &kp COLON  &none
+&none  &none     &kp TILDE  &kp MINUS    &kp PLUS   &none        &kp BSLH    &kp EQUAL  &kp LT    &kp GT    &kp QMARK  &none
+                            &none        &trans     &none        &none       &trans     &none
             >;
         };
 
