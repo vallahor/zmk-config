@@ -96,6 +96,13 @@
             timeout-ms = <75>;
             layers = <0>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -112,7 +119,7 @@
 &none  &kp Q  &kp W        &kp E         &kp R          &kp T    &kp Y  &kp U          &kp I                &kp O            &kp P     &none
 &none  &kp A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G    &kp H  &hmr LSHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
 &none  &kp Z  &kp X        &kp C         &kp V          &kp B    &kp N  &kp M          &kp COMMA            &kp DOT          &kp FSLH  &none
-                           &kp LSHIFT    &lt 2 SPACE    &kp LGUI &none  &mo 1          &kp ENTER
+                           &kp LSHIFT    &lt 2 SPACE    &none    &none  &mo 1          &kp LGUI
             >;
         };
 
