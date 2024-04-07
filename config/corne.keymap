@@ -13,8 +13,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <220>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -60,13 +60,6 @@
             layers = <0>;
         };
 
-        // enter {
-        //     bindings = <&kp ENTER>;
-        //     key-positions = <20 21>;
-        //     timeout-ms = <75>;
-        //     layers = <0 2>;
-        // };
-
         caps_word_toggle {
             bindings = <&caps_word>;
             key-positions = <33 32>;
@@ -77,20 +70,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <15 16>;
-            timeout-ms = <75>;
-            layers = <0>;
-        };
-
-        shift_left {
-            bindings = <&kp LSHIFT>;
-            key-positions = <16 14>;
-            timeout-ms = <75>;
-            layers = <0>;
-        };
-
-        shift_right {
-            bindings = <&kp LSHIFT>;
-            key-positions = <19 21>;
             timeout-ms = <75>;
             layers = <0>;
         };
