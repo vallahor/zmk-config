@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD";
             #binding-cells = <0>;
-            continue-list = <UNDERSCORE SPACE MINUS>;
+            continue-list = <UNDERSCORE>;
         };
     };
 
@@ -77,23 +77,10 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
             layers = <0>;
         };
 
-        // shift_right {
-        //     bindings = <&kp LSHIFT>;
-        //     key-positions = <19 21>;
-        //     timeout-ms = <75>;
-        //     layers = <0>;
-        // };
-
-        // shift_left {
-        //     bindings = <&kp LSHIFT>;
-        //     key-positions = <16 14>;
-        //     timeout-ms = <75>;
-        //     layers = <0>;
-        // };
     };
 
     keymap {
