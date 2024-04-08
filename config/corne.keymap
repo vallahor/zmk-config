@@ -41,15 +41,6 @@
             #binding-cells = <0>;
             continue-list = <UNDERSCORE SPACE MINUS>;
         };
-
-        shift_sticky: shift_sticky {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SHIFT_STICKY";
-            bindings = <&sk>;
-            #binding-cells = <1>;
-            release-after-ms = <500>;
-            quick-release;
-        };
     };
 
     combos {
@@ -62,8 +53,8 @@
             layers = <0>;
         };
 
-        shift_sticky {
-            bindings = <&shift_sticky LEFT_SHIFT>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
             timeout-ms = <125>;
             layers = <0>;
@@ -86,6 +77,13 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        shift_sticky {
+            bindings = <&sk LSHIFT>;
+            key-positions = <15 14>;
             timeout-ms = <50>;
             layers = <0>;
         };
