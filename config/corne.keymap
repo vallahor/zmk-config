@@ -41,15 +41,6 @@
             #binding-cells = <0>;
             continue-list = <UNDERSCORE SPACE MINUS>;
         };
-
-        sk_custom: sk_custom {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SK_CUSTOM";
-            bindings = <&sk_custom>;
-            #binding-cells = <1>;
-            release-after-ms = <300>;
-            quick-release;
-        };
     };
 
     combos {
@@ -90,10 +81,17 @@
             layers = <0>;
         };
 
-        shift_sticky {
-            bindings = <&sk_custom LSHIFT>;
+        shift_right {
+            bindings = <&kp LSHIFT>;
             key-positions = <19 21>;
-            timeout-ms = <50>;
+            timeout-ms = <75>;
+            layers = <0>;
+        };
+
+        shift_left {
+            bindings = <&kp LSHIFT>;
+            key-positions = <16 14>;
+            timeout-ms = <75>;
             layers = <0>;
         };
     };
