@@ -60,12 +60,12 @@
             layers = <0>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <33 32>;
-            timeout-ms = <125>;
-            layers = <0>;
-        };
+        // enter {
+        //     bindings = <&kp ENTER>;
+        //     key-positions = <33 32>;
+        //     timeout-ms = <125>;
+        //     layers = <0>;
+        // };
 
         // tab {
         //     bindings = <&kp TAB>;
@@ -74,12 +74,12 @@
         //     layers = <0>;
         // };
 
-        // enter {
-        //     bindings = <&kp ENTER>;
-        //     key-positions = <20 21>;
-        //     timeout-ms = <75>;
-        //     layers = <0>;
-        // };
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+            timeout-ms = <75>;
+            layers = <0>;
+        };
 
     };
 
