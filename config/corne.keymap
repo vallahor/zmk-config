@@ -53,21 +53,15 @@
         //     layers = <0>;
         // };
 
-        // backspace {
-        //     bindings = <&kp BACKSPACE>;
-        //     key-positions = <31 32>;
-        //     timeout-ms = <125>;
-        //     layers = <0>;
-        // };
-        enter {
-            bindings = <&kp ENTER>;
+        backspace {
+            bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <150>;
+            timeout-ms = <125>;
             layers = <0>;
         };
 
-        caps_word_toggle {
-            bindings = <&caps_word>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <33 32>;
             timeout-ms = <125>;
             layers = <0>;
