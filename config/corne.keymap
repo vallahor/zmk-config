@@ -80,10 +80,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W        &kp E         &kp R          &kp T         &kp Y  &kp U          &kp I                &kp O            &kp P     &none
-&none  &kp A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G         &kp H  &hmr LSHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X        &kp C         &kp V          &kp B         &kp N  &kp M          &kp COMMA            &kp DOT          &kp FSLH  &none
-                           &kp TAB       &lt 2 SPACE    &kp LSHIFT    &none  &mo 1          &kp LGUI
+&none  &kp Q  &kp W        &kp E         &kp R        &kp T         &kp Y       &kp U  &kp I                &kp O            &kp P     &none
+&none  &kp A  &hml LALT S  &hml LCTRL D  &kp F        &kp G         &kp H       &kp J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
+&none  &kp Z  &kp X        &kp C         &kp V        &kp B         &kp N       &kp M  &kp COMMA            &kp DOT          &kp FSLH  &none
+                           &kp TAB       &lt 2 SPACE  &kp LSHIFT    &kp LSHIFT  &mo 1  &kp LGUI
             >;
         };
 
@@ -107,10 +107,10 @@
 
         fn_layer {
             bindings = <
-&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &kp F11  &kp F12  &none   &none   &none     &none   &none   &none   &none   &none    &none
-&none  &none    &none    &none   &none   &none     &none   &none   &none   &none   &none    &none
-                         &none   &none   &none     &none   &none   &none
+&none  &kp F1   &kp F2   &kp F3  &kp F4           &kp F5    &kp F6          &kp F7             &kp F8            &kp F9      &kp F10  &none
+&none  &kp F11  &kp F12  &none   &kp PRINTSCREEN  &none     &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &none    &none
+&none  &none    &none    &none   &none            &none     &none           &kp C_MUTE         &kp C_PLAY_PAUSE  &none       &none    &none
+                         &none   &none            &none     &none           &none              &none
             >;
         };
     };
