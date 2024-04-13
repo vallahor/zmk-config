@@ -80,19 +80,19 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W        &kp E           &kp R        &kp T      &kp Y     &kp U  &kp I                &kp O            &kp P     &none
-&none  &kp A  &hml LALT S  &hml LCTRL D    &kp F        &kp G      &kp H     &kp J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X        &kp C           &kp V        &kp B      &kp N     &kp M  &kp COMMA            &kp DOT          &kp FSLH  &none
-                           &kp LEFT_SHIFT  &lt 1 SPACE  &kp TAB    &kp LGUI  &mo 2  &kp LSHIFT
+&none  &kp Q  &kp W        &kp E           &kp R      &kp T      &kp Y     &kp U        &kp I                &kp O            &kp P     &none
+&none  &kp A  &hml LALT S  &hml LCTRL D    &kp F      &kp G      &kp H     &kp J        &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI  &none
+&none  &kp Z  &kp X        &kp C           &kp V      &kp B      &kp N     &kp M        &kp COMMA            &kp DOT          &kp FSLH  &none
+                           &kp LEFT_SHIFT  &lt 1 ESC  &kp TAB    &kp LGUI  &lt 2 SPACE  &kp LSHIFT
             >;
         };
 
         sym_layer {
             bindings = <
-&none  &kp SQT   &kp EXCL   &kp PERCENT  &kp DQT    &kp DOLLAR    &kp GRAVE  &kp LBKT   &kp LPAR  &kp RPAR  &kp RBKT   &none
-&none  &kp HASH  &kp AT     &kp AMPS     &kp ASTRK  &kp CARET     &none      &kp UNDER  &kp LBRC  &kp RBRC  &kp COLON  &none
-&none  &kp PIPE  &kp TILDE  &kp MINUS    &kp PLUS   &kp BSLH      &none      &kp EQUAL  &kp LT    &kp GT    &kp QMARK  &none
-                            &none        &trans     &none         &none      &trans     &none
+&none  &kp SQT   &kp EXCL   &kp PERCENT  &kp DQT    &kp DOLLAR    &kp GRAVE      &kp LBKT   &kp LPAR  &kp RPAR  &kp RBKT   &none
+&none  &kp HASH  &kp AT     &kp AMPS     &kp ASTRK  &none         &kp CARET      &kp UNDER  &kp LBRC  &kp RBRC  &kp COLON  &none
+&none  &kp PIPE  &kp TILDE  &kp MINUS    &kp PLUS   &none         &kp BACKSLASH  &kp EQUAL  &kp LT    &kp GT    &kp QMARK  &none
+                            &none        &trans     &none         &none          &trans     &none
             >;
         };
 
