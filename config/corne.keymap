@@ -73,20 +73,6 @@
             timeout-ms = <125>;
             layers = <0>;
         };
-
-        right_shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <19 21>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
-        left_shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <14 16>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
     };
 
     keymap {
