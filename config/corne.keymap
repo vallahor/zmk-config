@@ -20,8 +20,8 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
-            timeout-ms = <125>;
+            key-positions = <32 33>;
+            timeout-ms = <150>;
             layers = <0>;
         };
 
@@ -34,7 +34,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <32 33>;
+            key-positions = <14 15>;
             timeout-ms = <125>;
             layers = <0>;
         };
