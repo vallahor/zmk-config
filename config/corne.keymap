@@ -76,7 +76,7 @@
 &none  &kp Q  &kp W            &kp E                &kp R              &kp T             &kp Y         &kp U              &kp I                &kp O            &kp P      &none
 &none  &kp A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G             &kp H         &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &kp SEMI   &none
 &none  &kp Z  &kp X            &kp C                &kp V              &kp B             &kp N         &kp M              &kp COMMA            &kp DOT          &kp SLASH  &none
-                               &none                &lt 2 SPACE        &kp LEFT_SHIFT    &kp LEFT_GUI  &mo 1              &mo 3
+                               &none                &lt 2 SPACE        &kp LEFT_SHIFT    &kp LEFT_GUI  &mo 1              &none
             >;
         };
 
@@ -106,15 +106,6 @@
                          &none   &none            &none     &none           &none              &none
             >;
         };
-
-        shift_layer {
-            bindings = <
-&none  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)   &kp LS(T)    &kp LS(Y)  &kp LS(U)   &kp LS(I)      &kp LS(O)    &kp LS(P)      &none
-&none  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)   &kp LS(G)    &kp LS(H)  &kp LS(J)   &kp LS(K)      &kp LS(L)    &kp SEMI   &none
-&none  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)   &kp LS(B)    &kp LS(N)  &kp LS(M)   &kp COMMA  &kp DOT        &kp SLASH  &none
-                     &none  &trans  &none    &none  &trans  &none
-            >;
-        };
     };
 
     conditional_layers {
@@ -122,7 +113,7 @@
 
         fn_layer_cond {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
         };
     };
 };
