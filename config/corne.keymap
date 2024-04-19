@@ -7,10 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt {
-    tapping-term-ms = <150>;
-};
-
 / {
     behaviors {
         hmr: hmr {
@@ -50,24 +46,24 @@
             layers = <0>;
         };
 
-        enter {
+        backspace {
             bindings = <&kp ENTER>;
-            key-positions = <>;
-            timeout-ms = <100>;
+            key-positions = <31 32>;
+            timeout-ms = <250>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
-            timeout-ms = <200>;
+            timeout-ms = <250>;
             layers = <0>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
-            timeout-ms = <200>;
+            timeout-ms = <250>;
             layers = <0>;
         };
     };
