@@ -15,8 +15,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <125>;
-            quick-tap-ms = <300>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <350>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -28,8 +28,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <125>;
-            quick-tap-ms = <300>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <350>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -51,21 +51,21 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <300>;
+            timeout-ms = <350>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
-            timeout-ms = <300>;
+            timeout-ms = <350>;
             layers = <0>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
-            timeout-ms = <300>;
+            timeout-ms = <350>;
             layers = <0>;
         };
     };
