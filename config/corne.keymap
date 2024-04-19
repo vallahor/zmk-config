@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt { tapping-term-ms = <100>; };
+&lt { tapping-term-ms = <125>; };
 
 / {
     behaviors {
@@ -44,28 +44,28 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
-            timeout-ms = <150>;
+            timeout-ms = <250>;
             layers = <0>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <250>;
+            timeout-ms = <300>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
-            timeout-ms = <250>;
+            timeout-ms = <300>;
             layers = <0>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
-            timeout-ms = <250>;
+            timeout-ms = <300>;
             layers = <0>;
         };
     };
