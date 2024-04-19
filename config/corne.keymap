@@ -48,8 +48,8 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 31>;
-            timeout-ms = <200>;
+            key-positions = <20 21>;
+            timeout-ms = <100>;
             layers = <0>;
         };
 
