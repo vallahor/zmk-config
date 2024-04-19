@@ -7,7 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt { tapping-term-ms = <150>; };
+&lt { tapping-term-ms = <125>; };
 
 / {
     behaviors {
@@ -15,8 +15,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <350>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -28,8 +28,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <350>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -44,28 +44,28 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
-            timeout-ms = <250>;
+            timeout-ms = <150>;
             layers = <0>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <350>;
+            timeout-ms = <250>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
-            timeout-ms = <350>;
+            timeout-ms = <250>;
             layers = <0>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
-            timeout-ms = <350>;
+            timeout-ms = <250>;
             layers = <0>;
         };
     };
@@ -78,7 +78,7 @@
 &none  &kp Q  &kp W  &kp E                &kp R              &kp T    &kp Y  &kp U              &kp I                &kp O    &kp P      &none
 &none  &kp A  &kp S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G    &kp H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L    &kp SEMI   &none
 &none  &kp Z  &kp X  &kp C                &kp V              &kp B    &kp N  &kp M              &kp COMMA            &kp DOT  &kp SLASH  &none
-                     &kp LEFT_ALT         &lt 2 SPACE        &none    &none  &lt 1 ENTER        &kp LEFT_GUI
+                     &kp LEFT_ALT         &lt 2 SPACE        &none    &none  &mo 1              &mt LEFT_GUI ENTER
             >;
         };
 
