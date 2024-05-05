@@ -67,21 +67,21 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
-            timeout-ms = <400>;
+            timeout-ms = <500>;
             layers = <0>;
         };
 
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
-            timeout-ms = <500>;
+            timeout-ms = <600>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
-            timeout-ms = <400>;
+            timeout-ms = <600>;
             layers = <0>;
         };
 
@@ -91,20 +91,6 @@
             timeout-ms = <400>;
             layers = <0>;
         };
-
-        left_shift1 {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <14 15>;
-            timeout-ms = <150>;
-            layers = <0>;
-        };
-
-        left_shift2 {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <20 21>;
-            timeout-ms = <150>;
-            layers = <0>;
-        };
     };
 
     keymap {
@@ -112,10 +98,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R                      &kp T    &kp Y         &kp U  &kp I                      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F                      &kp G    &kp H         &kp J  &kp K                      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V                      &kp B    &kp N         &kp M  &kp COMMA                  &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL  &key_mod LEFT_SHIFT SPACE  &mo 2    &kp LEFT_ALT  &mo 1  &enter_gui LEFT_GUI ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y         &kp U  &kp I                      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H         &kp J  &kp K                      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N         &kp M  &kp COMMA                  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 1 SPACE  &kp LEFT_SHIFT    &kp LEFT_ALT  &mo 1  &enter_gui LEFT_GUI ENTER
             >;
         };
 
