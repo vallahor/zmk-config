@@ -57,7 +57,7 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
-            timeout-ms = <500>;
+            timeout-ms = <150>;
             layers = <0>;
         };
     };
