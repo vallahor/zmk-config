@@ -57,8 +57,9 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
-            timeout-ms = <150>;
+            timeout-ms = <200>;
             layers = <0>;
+            require-prior-idle-ms = <(-1)>;
         };
     };
 
