@@ -49,29 +49,38 @@
             flavor = "tap-preferred";
             quick-tap-ms = <250>;
         };
-    };
 
-    combos {
-        compatible = "zmk,combos";
+        esc_symbol_layer: esc_symbol_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ESC_SYMBOL_LAYER";
+            bindings = <&mo>, <&kp>;
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <19 20>;
-            timeout-ms = <300>;
-            layers = <0>;
-            require-prior-idle-ms = <(-1)>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
+
+    //    combos {
+    //        compatible = "zmk,combos";
+    //
+    //        esc {
+    //            bindings = <&kp ESC>;
+    //            key-positions = <19 20>;
+    //            timeout-ms = <300>;
+    //            layers = <0>;
+    //            require-prior-idle-ms = <(-1)>;
+    //        };
+    //    };
 
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U  &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J  &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1  &kp ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U                       &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J                       &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M                       &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &esc_symbol_layer 1 ESCAPE  &kp ENTER
             >;
         };
 
