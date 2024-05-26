@@ -63,8 +63,8 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
-            timeout-ms = <500>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <300>;
+            require-prior-idle-ms = <150>;
             layers = <0>;
         };
     };
