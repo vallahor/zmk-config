@@ -47,16 +47,6 @@
             flavor = "tap-preferred";
             quick-tap-ms = <250>;
         };
-
-        key_mod: key_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KEY_MOD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
     };
 
     combos {
@@ -76,10 +66,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y                          &kp U  &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F      &kp G    &kp H                          &kp J  &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N                          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL  &kp SPACE  &mo 2    &key_mod LEFT_SHIFT BACKSPACE  &mo 1  &kp ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U  &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1  &kp ENTER
             >;
         };
 
