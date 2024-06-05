@@ -49,17 +49,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <19 20>;
-            timeout-ms = <300>;
-            layers = <0>;
-            require-prior-idle-ms = <(-1)>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -84,10 +74,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp N1  &kp N2        &kp N3            &kp N4          &kp N5        &kp N6         &kp N7     &kp N8   &kp N9      &kp N0     &none
-&none  &none   &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE     &kp LEFT       &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER  &none
-&none  &trans  &none         &none             &none           &kp ESCAPE    &kp BACKSPACE  &kp HOME   &kp END  &kp DELETE  &trans     &none
-                             &trans            &trans          &trans        &trans         &lt 1 TAB  &trans
+&none  &kp N1      &kp N2        &kp N3            &kp N4          &kp N5       &kp N6         &kp N7     &kp N8   &kp N9      &kp N0     &none
+&none  &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp LEFT       &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER  &none
+&none  &none       &none         &none             &none           &none        &kp BACKSPACE  &kp HOME   &kp END  &kp DELETE  &trans     &none
+                                 &trans            &trans          &trans       &trans         &lt 1 TAB  &trans
             >;
         };
 
