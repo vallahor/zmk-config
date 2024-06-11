@@ -55,16 +55,16 @@
         shift_r {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <20 21>;
-            timeout-ms = <300>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <100>;
             layers = <0>;
         };
 
         shift_l {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <14 15>;
-            timeout-ms = <300>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <100>;
             layers = <0>;
         };
     };
