@@ -79,10 +79,10 @@
 
         nav_layer {
             bindings = <
-&none  &none                 &kp HOME      &kp UP            &kp END         &none        &kp BACKSPACE  &kp N7     &kp N8  &kp N9  &kp DELETE  &none
-&none  &kp ESCAPE            &kp LEFT      &kp DOWN          &kp RIGHT       &kp SPACE    &none          &kp N4     &kp N5  &kp N6  &kp N0      &none
-&none  &kp LS(LEFT_CONTROL)  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none        &none       &kp N1     &kp N2  &kp N3  &trans      &none
-                                           &trans            &trans          &trans       &trans         &lt 1 TAB  &trans
+&none  &kp N1      &kp N2        &kp N3            &kp N4          &kp N5       &kp N6         &kp N7     &kp N8   &kp N9      &kp N0     &none
+&none  &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp LEFT       &kp DOWN   &kp UP   &kp RIGHT   &kp ENTER  &none
+&none  &none       &none         &none             &none           &none        &kp BACKSPACE  &kp HOME   &kp END  &kp DELETE  &trans     &none
+                                 &trans            &trans          &trans       &trans         &lt 1 TAB  &trans
             >;
         };
 
