@@ -7,10 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-// &lt {
-// flavor = "balanced";
-// tapping-term-ms = <175>;
-// };
+&lt {
+    // flavor = "balanced";
+
+    tapping-term-ms = <175>;
+};
 
 / {
     behaviors {
@@ -52,7 +53,16 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
