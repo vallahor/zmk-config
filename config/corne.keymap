@@ -15,8 +15,8 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
+        combo_esc {
+            bindings = <&kp ESC>;
             key-positions = <19 20>;
             layers = <0>;
             timeout-ms = <100>;
