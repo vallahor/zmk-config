@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
-    // flavor = "balanced";
-
     tapping-term-ms = <175>;
 };
 
@@ -21,8 +19,8 @@
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             layers = <0>;
-            timeout-ms = <80>;
-            require-prior-idle-ms = <1>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <0>;
         };
     };
 
