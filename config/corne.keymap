@@ -20,7 +20,6 @@
             key-positions = <19 20>;
             layers = <0>;
             timeout-ms = <100>;
-            require-prior-idle-ms = <0>;
         };
     };
 
