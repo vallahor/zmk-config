@@ -10,7 +10,16 @@
 &lt { tapping-term-ms = <175>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esc_combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+            layers = <0>;
+            timeout-ms = <100>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
