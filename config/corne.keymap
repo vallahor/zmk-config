@@ -13,39 +13,13 @@
     combos { compatible = "zmk,combos"; };
 
     behaviors {
-        hmr: hmr {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <75>;
-            bindings = <&kp>, <&kp>;
-
-            label = "HMR";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-        };
-
-        hml: hml {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <75>;
-            bindings = <&kp>, <&kp>;
-
-            label = "HML";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-        };
-
         esc_layer: esc_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_LAYER";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
         };
     };
 
@@ -54,10 +28,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E                &kp R              &kp T             &kp Y          &kp U                &kp I                &kp O    &kp P      &none
-&none  &kp A  &kp S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G             &kp H          &hmr LEFT_SHIFT J    &hmr LEFT_CONTROL K  &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C                &kp V              &kp B             &kp N          &kp M                &kp COMMA            &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL     &lt 2 SPACE        &kp LEFT_SHIFT    &kp BACKSPACE  &esc_layer 1 ESCAPE  &kp ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U                &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J                &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M                &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &esc_layer 1 ESCAPE  &kp ENTER
             >;
         };
 
