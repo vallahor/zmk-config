@@ -7,18 +7,32 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&lt { tapping-term-ms = <175>; };
+
 / {
     combos { compatible = "zmk,combos"; };
+
+    behaviors {
+        esc_layer: esc_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ESC_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U  &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J  &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1  &kp ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U                &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J                &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M                &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &esc_layer 1 ESCAPE  &kp ENTER
             >;
         };
 
