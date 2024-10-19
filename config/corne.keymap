@@ -13,11 +13,11 @@
     combos {
         compatible = "zmk,combos";
 
-        esc_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 20>;
-            layers = <0>;
-            timeout-ms = <80>;
+        enter_combo {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21>;
+            layers = <0 1>;
+            timeout-ms = <100>;
         };
     };
 
