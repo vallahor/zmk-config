@@ -33,7 +33,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <150>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             hold-trigger-key-positions = <6 18 30 19 31 7 8 20 32 33 21 9 10 22 34>;
         };
 
@@ -45,7 +45,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <150>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             hold-trigger-key-positions = <29 17 5 4 16 28 27 15 3 2 1 14 13 25 26>;
         };
     };
@@ -82,10 +82,10 @@
 
         nav_layer {
             bindings = <
-&trans  &kp ESCAPE        &trans          &trans        &trans      &trans    &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &none           &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp ESCAPE  &trans    &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER       &trans
-&trans  &kp LC(Z)         &kp LC(X)       &kp LC(C)     &kp LC(V)   &trans    &trans         &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &trans
-                                          &trans        &trans      &trans    &trans         &kp TAB            &kp LEFT_GUI
+&trans  &kp ESCAPE  &trans        &trans            &trans          &trans    &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &none           &trans
+&trans  &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER       &trans
+&trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans    &trans         &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &trans
+                                  &trans            &trans          &trans    &trans         &kp TAB            &kp LEFT_GUI
             >;
         };
     };
