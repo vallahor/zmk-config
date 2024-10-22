@@ -33,7 +33,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             hold-trigger-key-positions = <6 18 30 19 31 7 8 20 32 33 21 9 10 22 34>;
         };
 
@@ -45,7 +45,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             hold-trigger-key-positions = <29 17 5 4 16 28 27 15 3 2 1 14 13 25 26>;
         };
     };
