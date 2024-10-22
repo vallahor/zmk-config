@@ -22,31 +22,19 @@
             key-positions = <19 20>;
             layers = <0>;
         };
-    };
 
-    behaviors {
-        hmr_left: hmr_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR_LEFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "hold-preferred";
-            hold-trigger-key-positions = <6 18 30 19 31 7 8 20 32 33 21 9 10 22 34>;
+        shift_left {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <16 15 14>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
 
-        hmr_right: hmr_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR_RIGHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "hold-preferred";
-            hold-trigger-key-positions = <29 17 5 4 16 28 27 15 3 2 1 14 13 25 26>;
+        shift_right {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <19 20 21>;
+            timeout-ms = <100>;
+            layers = <0>;
         };
     };
 
@@ -55,10 +43,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E                     &kp R                   &kp T             &kp Y          &kp U                    &kp I                      &kp O    &kp P          &none
-&none  &kp A  &kp S  &hmr_left LEFT_CONTROL D  &hmr_left LEFT_SHIFT F  &kp G             &kp H          &hmr_right LEFT_SHIFT J  &hmr_right LEFT_CONTROL K  &kp L    &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C                     &kp V                   &kp B             &kp N          &kp M                    &kp COMMA                  &kp DOT  &kp SLASH      &none
-                     &mo 2                     &lt 3 SPACE             &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1                    &kp ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U  &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J  &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1  &kp ENTER
             >;
         };
 
@@ -71,24 +59,31 @@
             >;
         };
 
-        number_layer {
+        nav_layer {
             bindings = <
-&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none   &kp N7   &kp N8        &kp N9  &none   &none
-&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &none   &kp N4   &kp N5        &kp N6  &kp N0  &none
-&none  &kp F11  &kp F12  &none   &none   &none      &none   &kp N1   &kp N2        &kp N3  &none   &none
-                         &trans  &trans  &trans     &trans  &kp TAB  &kp LEFT_GUI
+&none  &kp ESCAPE        &kp HOME      &kp UP    &kp END    &kp DELETE    &kp PAGE_UP    &kp N7     &kp N8            &kp N9  &none           &none
+&none  &kp LEFT_CONTROL  &kp LEFT      &kp DOWN  &kp RIGHT  &kp SPACE     &kp PAGE_DOWN  &kp N4     &kp N5            &kp N6  &kp N0          &none
+&none  &kp LEFT_SHIFT    &kp LEFT_ALT  &none     &none      &none         &none          &kp N1     &kp N2            &kp N3  &kp LEFT_SHIFT  &none
+                                       &trans    &trans     &trans        &trans         &lt 1 TAB  &kp LEFT_COMMAND
             >;
         };
 
-        nav_layer {
+        fn_layer {
             bindings = <
-&trans  &kp ESCAPE  &trans        &trans            &trans          &trans    &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &none           &trans
-&trans  &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER       &trans
-&trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans    &trans         &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &trans
-                                  &trans            &trans          &trans    &trans         &kp TAB            &kp LEFT_GUI
+&none  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &none           &none              &none             &none       &none            &none
+&none  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10    &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp PRINTSCREEN  &none
+&none  &kp F11  &kp F12  &none   &none   &none      &none           &kp C_MUTE         &kp C_PLAY_PAUSE  &none       &none            &none
+                         &none   &none   &none      &none           &none              &none
             >;
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        fn_layer_cond {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
