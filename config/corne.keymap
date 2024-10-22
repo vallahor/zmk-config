@@ -11,11 +11,54 @@
     combos {
         compatible = "zmk,combos";
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <19 20 21>;
+        jk_fix {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
             layers = <0>;
-            timeout-ms = <100>;
+        };
+
+        jk_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+    };
+
+    behaviors {
+        weak: weak {
+            compatible = "zmk,behavior-hold-tap";
+            label = "WEAK";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            flavor = "tap-preferred";
+        };
+
+        hmr_left: hmr_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 18 30 19 31 7 8 20 32 33 21 9 10 22 34>;
+        };
+
+        hmr_right: hmr_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <29 17 5 4 16 28 27 15 3 2 1 14 13 25 26>;
         };
     };
 
@@ -24,10 +67,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U  &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J  &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &kp LEFT_CONTROL  &lt 3 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1  &mo 2
+&none  &kp Q             &kp W                 &kp E                     &kp R                   &kp T             &kp Y          &kp U                    &kp I                      &kp O             &kp P                     &none
+&none  &weak LEFT_GUI A  &weak LG(LEFT_ALT) S  &hmr_left LEFT_CONTROL D  &hmr_left LEFT_SHIFT F  &kp G             &kp H          &hmr_right LEFT_SHIFT J  &hmr_right LEFT_CONTROL K  &weak LEFT_ALT L  &weak LEFT_GUI SEMICOLON  &none
+&none  &kp Z             &kp X                 &kp C                     &kp V                   &kp B             &kp N          &kp M                    &kp COMMA                  &kp DOT           &kp SLASH                 &none
+                                               &mo 3                     &kp SPACE               &kp LEFT_SHIFT    &kp BACKSPACE  &mo 1                    &mo 2
             >;
         };
 
