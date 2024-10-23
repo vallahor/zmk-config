@@ -61,7 +61,7 @@
 &trans  &kp ESCAPE  &trans        &trans            &trans          &trans          &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &none           &trans
 &trans  &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans          &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER       &trans
 &trans  &kp LC(Z)   &kp LC(X)     &kp LC(C)         &kp LC(V)       &trans          &trans         &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &trans
-                                  &kp TAB           &kp ENTER       &kp LEFT_GUI    &trans         &trans             &trans
+                                  &kp ENTER         &kp TAB         &kp LEFT_GUI    &trans         &trans             &trans
             >;
         };
     };
