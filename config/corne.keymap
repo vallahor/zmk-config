@@ -7,7 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt { tapping-term-ms = <175>; };
+&lt {
+    tapping-term-ms = <175>;
+    quick-tap-ms = <175>;
+};
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -21,16 +24,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <175>;
         };
-
-        ctrl_layer: ctrl_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CTRL_LAYER";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <230>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
@@ -38,10 +31,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R                           &kp T             &kp Y          &kp U                &kp I      &kp O    &kp P      &none
-&none  &kp A  &kp S  &kp D  &kp F                           &kp G             &kp H          &kp J                &kp K      &kp L    &kp SEMI   &none
-&none  &kp Z  &kp X  &kp C  &kp V                           &kp B             &kp N          &kp M                &kp COMMA  &kp DOT  &kp SLASH  &none
-                     &mo 2  &ctrl_layer LEFT_CONTROL SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &esc_layer 1 ESCAPE  &kp ENTER
+&none  &kp Q  &kp W  &kp E             &kp R        &kp T             &kp Y          &kp U                &kp I      &kp O    &kp P      &none
+&none  &kp A  &kp S  &kp D             &kp F        &kp G             &kp H          &kp J                &kp K      &kp L    &kp SEMI   &none
+&none  &kp Z  &kp X  &kp C             &kp V        &kp B             &kp N          &kp M                &kp COMMA  &kp DOT  &kp SLASH  &none
+                     &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_SHIFT    &kp BACKSPACE  &esc_layer 1 ESCAPE  &kp ENTER
             >;
         };
 
