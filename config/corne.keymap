@@ -7,14 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt {
-    tapping-term-ms = <175>;
-    quick-tap-ms = <175>;
-};
-
 / {
-    combos { compatible = "zmk,combos"; };
-
     behaviors {
         esc_layer: esc_layer {
             compatible = "zmk,behavior-hold-tap";
@@ -49,10 +42,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp ESCAPE        &kp HOME  &kp UP    &kp END    &kp DELETE    &kp PAGE_UP    &kp N7          &kp N8  &kp N9  &kp BACKSPACE   &none
-&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SPACE     &kp PAGE_DOWN  &kp N4          &kp N5  &kp N6  &kp LEFT_SHIFT  &none
-&none  &kp LEFT_ALT      &none     &none     &none      &none         &kp NUMBER_0   &kp N1          &kp N2  &kp N3  &none           &none
-                                   &trans    &trans     &trans        &kp LEFT_GUI   &lt 1 NUMBER_0  &kp TAB
+&none  &kp ESCAPE        &kp HOME  &kp UP    &kp END    &kp DELETE    &kp PAGE_UP    &kp N7     &kp N8        &kp N9  &kp BACKSPACE   &none
+&none  &kp LEFT_CONTROL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SPACE     &kp PAGE_DOWN  &kp N4     &kp N5        &kp N6  &kp LEFT_SHIFT  &none
+&none  &kp LEFT_ALT      &none     &none     &none      &none         &kp NUMBER_0   &kp N1     &kp N2        &kp N3  &none           &none
+                                   &trans    &trans     &trans        &kp LEFT_GUI   &lt 1 TAB  &kp NUMBER_0
             >;
         };
 
