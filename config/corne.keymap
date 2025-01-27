@@ -44,10 +44,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp N7          &kp N8        &kp N9           &kp NUMBER_0  &none
-&none  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB       &kp SPACE       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE    &none
-&none  &kp LC(Z)         &kp LC(X)       &kp LC(C)     &kp LC(V)     &none           &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none         &none
-                                         &trans        &trans        &trans          &kp LEFT_GUI    &lt 1 NUMBER_0  &kp ENTER
+&none  &kp NUMBER_1      &kp NUMBER_2    &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6       &kp N7          &kp N8        &kp N9           &kp NUMBER_0  &none
+&none  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp TAB       &kp SPACE       &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DELETE    &none
+&none  &kp LC(Z)         &kp LC(X)       &kp LC(C)     &kp LC(V)     &none           &kp HOME           &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp LEFT_GUI  &none
+                                         &trans        &trans        &trans          &kp LC(BACKSPACE)  &trans          &kp ENTER
             >;
         };
 
