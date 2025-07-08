@@ -7,23 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <190>;
-};
-
 / {
-    behaviors {
-        esc_layer: esc_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ESC_LAYER";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
