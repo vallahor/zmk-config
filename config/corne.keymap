@@ -7,7 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&lt { flavor = "balanced"; };
+&lt {
+    flavor = "balanced";
+};
 
 / {
     behaviors {
