@@ -28,7 +28,7 @@
             bindings = <&kp TAB>;
             key-positions = <14 15 16>;
             timeout-ms = <100>;
-            layers = <0 2>;
+            layers = <0>;
         };
     };
 
