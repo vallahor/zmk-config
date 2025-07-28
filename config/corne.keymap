@@ -23,20 +23,6 @@
             layers = <0>;
             timeout-ms = <100>;
         };
-
-        bs {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
-        del {
-            bindings = <&kp DELETE>;
-            key-positions = <32 33>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -75,9 +61,9 @@
         base_layer {
             bindings = <
 &none  &kp Q              &kp W  &kp E  &kp R      &kp T        &kp Y          &kp U  &kp I           &kp O    &kp P                   &none
-&none  &hml LCTRL A       &kp S  &kp D  &kp F      &kp G        &kp H          &kp J  &kp K           &kp L    &hmr LCTRL SEMICOLON    &none
-&none  &hml LEFT_SHIFT Z  &kp X  &kp C  &kp V      &kp B        &kp N          &kp M  &kp COMMA       &kp DOT  &hmr RIGHT_SHIFT SLASH  &none
-                                 &mo 2  &kp SPACE  &kp ENTER    &kp BACKSPACE  &mo 1  &kp LEFT_SHIFT
+&none  &kp A       &kp S  &kp D  &kp F      &kp G        &kp H          &kp J  &kp K           &kp L    &kp SEMICOLON    &none
+&none  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N          &kp M  &kp COMMA       &kp DOT  &kp SLASH  &none
+                                 &mo 2  &kp SPACE  &kp LCTRL    &kp BACKSPACE  &mo 1  &kp LEFT_SHIFT
             >;
         };
 
