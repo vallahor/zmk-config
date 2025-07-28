@@ -18,8 +18,8 @@
         };
 
         enter {
-            bindings = <&kp SEMI>;
-            key-positions = <32 33>;
+            bindings = <&kp ENTER>;
+            key-positions = <21 20 19>;
             layers = <0>;
             timeout-ms = <100>;
         };
