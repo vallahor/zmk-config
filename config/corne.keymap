@@ -21,9 +21,9 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 33>;
+            key-positions = <21 20>;
             layers = <0>;
-            timeout-ms = <100>;
+            require-prior-idle-ms = <100>;
         };
     };
 
