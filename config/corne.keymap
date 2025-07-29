@@ -24,6 +24,8 @@
             label = "NAV_LAYER_CTRL";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&kp LCTRL>;
+
+            tapping-term-ms = <400>;
         };
     };
 
