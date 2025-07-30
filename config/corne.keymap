@@ -9,7 +9,7 @@
 
 &sk {
     quick-release;
-    release-after-ms = <300>;
+    release-after-ms = <500>;
 };
 
 / {
