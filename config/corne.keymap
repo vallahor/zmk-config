@@ -37,15 +37,26 @@
         };
     };
 
+    behaviors {
+        nav_layer_ctrl: nav_layer_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NAV_LAYER_CTRL";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&kp LCTRL>;
+
+            tapping-term-ms = <500>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y          &kp U  &kp I           &kp O    &kp P          &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G               &kp H          &kp J  &kp K           &kp L    &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &kp N          &kp M  &kp COMMA       &kp DOT  &kp SLASH      &none
-                     &mo 2  &kp SPACE  &sk LEFT_CONTROL    &kp BACKSPACE  &mo 1  &sk LEFT_SHIFT
+&none  &kp Q  &kp W  &kp E            &kp R      &kp T        &kp Y          &kp U  &kp I           &kp O    &kp P          &none
+&none  &kp A  &kp S  &kp D            &kp F      &kp G        &kp H          &kp J  &kp K           &kp L    &kp SEMICOLON  &none
+&none  &kp Z  &kp X  &kp C            &kp V      &kp B        &kp N          &kp M  &kp COMMA       &kp DOT  &kp SLASH      &none
+                     &nav_layer_ctrl  &kp SPACE  &kp ENTER    &kp BACKSPACE  &mo 1  &sk LEFT_SHIFT
             >;
         };
 
@@ -60,10 +71,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp N1      &kp N2        &kp N3            &kp N4     &kp N5       &kp N6        &kp N7         &kp N8      &kp N9     &kp N0         &none
-&none  &kp ESCAPE  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB    &kp ENTER    &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT  &kp PAGE_UP    &none
-&none  &kp LC(Z)   &kp LC(X)     &kp LC(C)         &kp LC(V)  &trans       &kp HOME      &kp BACKSPACE  &kp DELETE  &kp END    &kp PAGE_DOWN  &none
-                                 &trans            &trans     &trans       &kp LEFT_GUI  &trans         &trans
+&none  &kp ESC       &kp HOME   &kp UP     &kp END    &kp TAB      &kp PAGE_UP        &kp N7  &kp N8  &kp N9  &kp DEL   &none
+&none  &kp LCTRL     &kp LEFT   &kp DOWN   &kp RIGHT  &kp TAB      &kp PAGE_DOWN      &kp N4  &kp N5  &kp N6  &kp N0    &none
+&none  &kp LEFT_ALT  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp ENTER    &kp N0             &kp N1  &kp N2  &kp N3  &kp LGUI  &none
+                                &trans     &trans     &trans       &kp LC(BACKSPACE)  &trans  &trans
             >;
         };
 
