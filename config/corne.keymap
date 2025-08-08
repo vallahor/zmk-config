@@ -50,6 +50,8 @@
             label = "TAP_MOD_LEFT";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&mo 5>;
+
+            tapping-term-ms = <350>;
         };
 
         tap_mod_right: tap_mod_right {
@@ -57,6 +59,8 @@
             label = "TAP_MOD_RIGHT";
             #binding-cells = <0>;
             bindings = <&mo 3>, <&mo 6>;
+
+            tapping-term-ms = <350>;
         };
     };
 
@@ -111,8 +115,8 @@
         action_left {
             bindings = <
 &trans  &trans        &trans        &trans            &kp LS(TAB)     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans            &kp LEFT_SHIFT          &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB         &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans            &kp LEFT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans            &trans          &trans    &trans  &trans  &trans
             >;
         };
@@ -120,8 +124,8 @@
         action_right {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(TAB)     &trans            &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_SHIFT          &trans            &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp TAB         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_SHIFT  &trans            &trans        &trans        &trans
                         &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
