@@ -39,6 +39,7 @@
         semi {
             bindings = <&kp SEMI>;
             key-positions = <33 32>;
+            timeout-ms = <120>;
             layers = <0>;
         };
     };
@@ -48,7 +49,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_MOD_LEFT";
             #binding-cells = <0>;
-            bindings = <&mo 3>, <&mo 5>;
+            bindings = <&mo 2>, <&mo 5>;
 
             tapping-term-ms = <250>;
         };
