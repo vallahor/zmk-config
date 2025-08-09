@@ -82,10 +82,10 @@
 
         num_layer {
             bindings = <
-&none  &kp ESCAPE    &none         &none             &kp LS(TAB)  &none        &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB      &kp SPACE    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0        &none
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)    &none        &kp CARET  &kp N1  &kp N2  &kp N3  &kp SLASH     &none
-                                   &trans            &trans       &trans       &trans     &trans  &trans
+&none  &kp ESCAPE    &none         &none             &kp TAB         &none        &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp SPACE    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0        &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none        &kp CARET  &kp N1  &kp N2  &kp N3  &kp SLASH     &none
+                                   &trans            &trans          &trans       &trans     &trans  &trans
             >;
         };
 
