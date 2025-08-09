@@ -39,7 +39,6 @@
         semi {
             bindings = <&kp SEMI>;
             key-positions = <33 32>;
-            timeout-ms = <120>;
             layers = <0>;
         };
     };
