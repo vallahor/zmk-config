@@ -28,13 +28,6 @@
             layers = <0>;
             timeout-ms = <120>;
         };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <14 15 16>;
-            timeout-ms = <120>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -71,8 +64,8 @@
 
         sym_layer {
             bindings = <
-&none  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp AT_SIGN    &kp GRAVE         &kp AMPERSAND  &kp ASTERISK    &kp UNDERSCORE    &kp DOUBLE_QUOTES  &none
-&none  &kp PERCENT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp DOLLAR     &kp SINGLE_QUOTE  &kp SEMICOLON  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp COLON          &none
+&none  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp DOLLAR     &kp GRAVE         &kp AMPERSAND  &kp ASTERISK    &kp UNDERSCORE    &kp DOUBLE_QUOTES  &none
+&none  &kp PERCENT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp AT_SIGN    &kp SINGLE_QUOTE  &kp SEMICOLON  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp COLON          &none
 &none  &kp TILDE        &kp MINUS             &kp PLUS               &kp CARET  &none          &kp BACKSLASH     &kp PIPE       &kp LESS_THAN   &kp GREATER_THAN  &kp QUESTION       &none
                                               &lt 2 ENTER            &trans     &trans         &trans            &trans         &trans
             >;
@@ -80,10 +73,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp ESCAPE    &none         &none             &kp TAB         &none     &none   &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none     &none   &kp BACKSPACE   &kp ENTER       &kp TAB          &kp DELETE     &none
-                                   &trans            &trans          &trans    &trans  &trans          &trans
+&none  &kp ESCAPE    &none         &none             &kp TAB         &none     &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp LC(BACKSPACE)  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB            &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none     &none          &kp BACKSPACE   &kp ENTER       &kp DELETE       &kp LC(DELETE)     &none
+                                   &trans            &trans          &trans    &trans         &trans          &trans
             >;
         };
 
