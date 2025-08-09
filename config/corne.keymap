@@ -35,32 +35,6 @@
             timeout-ms = <120>;
             layers = <0>;
         };
-
-        semi {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <33 32>;
-            layers = <0>;
-        };
-    };
-
-    behaviors {
-        tap_mod_left: tap_mod_left {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_MOD_LEFT";
-            #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 5>;
-
-            tapping-term-ms = <350>;
-        };
-
-        tap_mod_right: tap_mod_right {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_MOD_RIGHT";
-            #binding-cells = <0>;
-            bindings = <&mo 3>, <&mo 6>;
-
-            tapping-term-ms = <350>;
-        };
     };
 
     keymap {
@@ -68,10 +42,10 @@
 
         base_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y           &kp U  &kp I           &kp O    &kp P          &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G               &kp H           &kp J  &kp K           &kp L    &kp BACKSPACE  &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &kp N           &kp M  &kp COMMA       &kp DOT  &kp SLASH      &none
-                     &mo 2  &kp SPACE  &sk LEFT_CONTROL    &sk LEFT_SHIFT  &mo 1  &sk LEFT_SHIFT
+&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y          &kp U  &kp I           &kp O    &kp P          &none
+&none  &kp A  &kp S  &kp D  &kp F      &kp G               &kp H          &kp J  &kp K           &kp L    &kp SEMICOLON  &none
+&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &kp N          &kp M  &kp COMMA       &kp DOT  &kp SLASH      &none
+                     &mo 2  &kp SPACE  &sk LEFT_CONTROL    &kp BACKSPACE  &mo 1  &sk LEFT_SHIFT
             >;
         };
 
@@ -86,10 +60,10 @@
 
         nav_num_layer {
             bindings = <
-&none  &kp TAB           &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP      &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &none
-&none  &kp LEFT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0        &none
-&none  &kp LC(Z)         &kp LC(X)       &kp LC(C)       &kp LC(V)        &none            &kp CARET  &kp N1  &kp N2  &kp N3  &kp SLASH     &none
-                                         &trans          &trans           &trans           &trans     &trans  &trans
+&none  &kp TAB           &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP      &none   &kp N7  &kp N8  &kp N9  &none         &none
+&none  &kp LEFT_CONTROL  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &none   &kp N4  &kp N5  &kp N6  &kp N0        &none
+&none  &kp LC(Z)         &kp LC(X)       &kp LC(C)       &kp LC(V)        &none            &none   &kp N1  &kp N2  &kp N3  &kp LEFT_GUI  &none
+                                         &trans          &trans           &trans           &trans  &trans  &trans
             >;
         };
 
@@ -125,7 +99,7 @@
         compatible = "zmk,conditional-layers";
 
         fn_layer_cond {
-            if-layers = <3 1>;
+            if-layers = <1 2>;
             then-layer = <3>;
         };
     };
