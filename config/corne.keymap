@@ -28,6 +28,13 @@
             layers = <0>;
             timeout-ms = <120>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 15 14>;
+            timeout-ms = <120>;
+            layers = <0>;
+        };
     };
 
     behaviors {
