@@ -42,7 +42,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_MOD_LEFT";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 5>;
+            bindings = <&mo 3>, <&mo 5>;
 
             tapping-term-ms = <250>;
         };
@@ -51,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_MOD_RIGHT";
             #binding-cells = <0>;
-            bindings = <&mo 3>, <&mo 6>;
+            bindings = <&mo 2>, <&mo 6>;
 
             tapping-term-ms = <250>;
         };
@@ -71,28 +71,28 @@
 
         sym_layer {
             bindings = <
-&none  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp GRAVE     &kp AT_SIGN       &kp AMPERSAND  &kp ASTERISK    &kp UNDERSCORE    &kp DOUBLE_QUOTES  &none
-&none  &kp PERCENT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp DOLLAR    &kp SINGLE_QUOTE  &kp COLON      &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp SEMICOLON      &none
-&none  &kp TILDE        &kp MINUS             &kp PLUS               &kp CARET  &none         &kp BACKSLASH     &kp PIPE       &kp LESS_THAN   &kp GREATER_THAN  &kp QUESTION       &none
-                                              &lt 2 ENTER            &trans     &trans        &trans            &trans         &trans
+&none  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp AT_SIGN    &kp GRAVE         &kp AMPERSAND  &kp ASTERISK    &kp UNDERSCORE    &kp DOUBLE_QUOTES  &none
+&none  &kp PERCENT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp DOLLAR     &kp SINGLE_QUOTE  &kp SEMICOLON  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp COLON          &none
+&none  &kp TILDE        &kp MINUS             &kp PLUS               &kp CARET  &none          &kp BACKSLASH     &kp PIPE       &kp LESS_THAN   &kp GREATER_THAN  &kp QUESTION       &none
+                                              &lt 2 ENTER            &trans     &trans         &trans            &trans         &trans
             >;
         };
 
         nav_layer {
             bindings = <
-&none  &kp TAB     &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP      &none              &none           &none             &none           &none         &none
-&none  &kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &none              &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_GUI  &none
-&none  &kp LC(Z)   &kp LC(X)       &kp LC(C)       &kp LC(V)        &none            &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE        &kp LC(DELETE)  &none         &none
-                                   &trans          &trans           &trans           &kp TAB            &trans          &trans
+&none  &kp ESCAPE    &none         &none             &kp TAB         &none     &none   &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none     &none   &kp BACKSPACE   &kp ENTER       &kp TAB          &kp DELETE     &none
+                                   &trans            &trans          &trans    &trans  &trans          &trans
             >;
         };
 
         num_layer {
             bindings = <
-&none  &none         &none         &none             &none           &none         &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0        &none
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none         &kp CARET  &kp N1  &kp N2  &kp N3  &kp SLASH     &none
-                                   &trans            &trans          &trans        &trans     &trans  &trans
+&none  &kp ESCAPE    &none         &none             &kp LS(TAB)  &none        &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK  &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB      &kp SPACE    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp N0        &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)    &none        &kp CARET  &kp N1  &kp N2  &kp N3  &kp SLASH     &none
+                                   &trans            &trans       &trans       &trans     &trans  &trans
             >;
         };
 
