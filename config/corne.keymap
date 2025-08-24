@@ -35,12 +35,6 @@
             timeout-ms = <120>;
             layers = <0>;
         };
-
-        semi {
-            bindings = <&kp SEMI>;
-            key-positions = <33 32>;
-            layers = <0>;
-        };
     };
 
     behaviors {
@@ -69,7 +63,7 @@
         base_layer {
             bindings = <
 &none  &kp Q  &kp W  &kp E  &kp R      &kp T            &kp Y           &kp U  &kp I      &kp O    &kp P          &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H           &kp J  &kp K      &kp L    &kp BACKSPACE  &none
+&none  &kp A  &kp S  &kp D  &kp F      &kp G            &kp H           &kp J  &kp K      &kp L    &kp SEMICOLON  &none
 &none  &kp Z  &kp X  &kp C  &kp V      &kp B            &kp N           &kp M  &kp COMMA  &kp DOT  &kp SLASH      &none
                      &mo 3  &kp SPACE  &tap_mod_left    &tap_mod_right  &mo 1  &mo 2
             >;
@@ -86,10 +80,10 @@
 
         nav_layer {
             bindings = <
-&none  &kp ESCAPE    &none         &none             &kp TAB         &none     &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &kp LC(BACKSPACE)  &none
-&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB            &none
-&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none     &none          &kp BACKSPACE   &kp ENTER       &kp DELETE       &kp LC(DELETE)     &none
-                                   &trans            &trans          &trans    &trans         &trans          &trans
+&none  &kp ESCAPE    &none         &none             &kp TAB         &none     &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &kp TAB         &none
+&none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none     &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER       &none
+&none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none     &none          &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &none
+                                   &trans            &trans          &trans    &trans         &trans             &trans
             >;
         };
 
