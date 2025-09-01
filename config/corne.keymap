@@ -13,7 +13,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
+    };
 
     behaviors {
         tap_mod_left: tap_mod_left {
