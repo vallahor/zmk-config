@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_MOD_RIGHT";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&mo 6>;
+            bindings = <&sk LEFT_SHIFT>, <&mo 0>;
 
             tapping-term-ms = <250>;
         };
@@ -84,7 +84,7 @@
 
         fn_layer {
             bindings = <
-&none  &none         &none         &none             &none           &tog 6        &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&none  &none         &none         &none             &none           &none         &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &none
 &none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE    &none            &kp F4  &kp F5  &kp F6  &kp F10  &none
 &none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none         &none            &kp F1  &kp F2  &kp F3  &kp F11  &none
                                    &trans            &trans          &trans        &trans           &trans  &trans
@@ -97,15 +97,6 @@
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB         &trans    &trans  &kp TAB         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
 &trans  &trans        &trans        &trans            &kp LEFT_SHIFT  &trans    &trans  &kp LEFT_SHIFT  &trans            &trans        &trans        &trans
                                     &trans            &trans          &trans    &trans  &trans          &trans
-            >;
-        };
-
-        ms_layer {
-            bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &trans          &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G               &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &trans          &trans          &trans          &trans           &trans         &none
-                     &mo 3  &kp SPACE  &kp LEFT_CONTROL    &kp LEFT_SHIFT  &kp LEFT_ALT    &mo 4
             >;
         };
     };
