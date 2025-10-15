@@ -51,7 +51,7 @@
 &none  &kp Q  &kp W  &kp E  &kp R      &kp T               &kp Y           &kp U  &kp I      &kp O    &kp P          &none
 &none  &kp A  &kp S  &kp D  &kp F      &kp G               &kp H           &kp J  &kp K      &kp L    &kp SEMICOLON  &none
 &none  &kp Z  &kp X  &kp C  &kp V      &kp B               &kp N           &kp M  &kp COMMA  &kp DOT  &kp SLASH      &none
-                     &mo 3  &kp SPACE  &sk LEFT_CONTROL    &sk LEFT_SHIFT  &mo 1  &mo 2
+                     &mo 3  &kp SPACE  &kp LEFT_CONTROL    &sk LEFT_SHIFT  &mo 1  &mo 2
             >;
         };
 
@@ -84,7 +84,7 @@
 
         fn_layer {
             bindings = <
-&none  &none         &none         &none             &none           &none         &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&none  &none         &none         &none             &none           &tog 6        &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12  &none
 &none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE    &none            &kp F4  &kp F5  &kp F6  &kp F10  &none
 &none  &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &none         &none            &kp F1  &kp F2  &kp F3  &kp F11  &none
                                    &trans            &trans          &trans        &trans           &trans  &trans
@@ -97,6 +97,15 @@
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp TAB         &trans    &trans  &kp TAB         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
 &trans  &trans        &trans        &trans            &kp LEFT_SHIFT  &trans    &trans  &kp LEFT_SHIFT  &trans            &trans        &trans        &trans
                                     &trans            &trans          &trans    &trans  &trans          &trans
+            >;
+        };
+
+        ms_layer {
+            bindings = <
+&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &kp PAGE_UP     &kp HOME           &kp UP_ARROW    &kp END          &kp PAGE_UP     &none
+&none  &kp A  &kp S  &kp D  &kp F      &kp G               &kp PAGE_DOWN   &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN   &none
+&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &none           &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &none
+                     &mo 3  &kp SPACE  &kp LEFT_CONTROL    &kp LEFT_SHIFT  &kp LEFT_ALT       &mo 4
             >;
         };
     };
