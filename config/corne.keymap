@@ -102,10 +102,10 @@
 
         ms_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &kp PAGE_UP     &kp HOME           &kp UP_ARROW    &kp END          &kp PAGE_UP     &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G               &kp PAGE_DOWN   &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN   &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &none           &kp LC(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LC(DELETE)  &none
-                     &mo 3  &kp SPACE  &kp LEFT_CONTROL    &kp LEFT_SHIFT  &kp LEFT_ALT       &mo 4
+&none  &kp Q  &kp W  &kp E  &kp R      &kp T               &trans          &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &none
+&none  &kp A  &kp S  &kp D  &kp F      &kp G               &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none
+&none  &kp Z  &kp X  &kp C  &kp V      &kp B               &trans          &trans          &trans          &trans           &trans         &none
+                     &mo 3  &kp SPACE  &kp LEFT_CONTROL    &kp LEFT_SHIFT  &kp LEFT_ALT    &mo 4
             >;
         };
     };
