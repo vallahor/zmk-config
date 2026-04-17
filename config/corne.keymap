@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 &kscan0 {
-    debounce-press-ms = <5>;
-    debounce-release-ms = <60>;
+    debounce-press-ms = <30>;
+    debounce-release-ms = <30>;
 };
 
 &sk {
