@@ -7,6 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&kscan0 {
+    debounce-press-ms = <5>;
+    debounce-release-ms = <60>;
+};
+
 &sk {
     quick-release;
     release-after-ms = <300>;
