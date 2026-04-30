@@ -24,13 +24,20 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
-            timeout-ms = <80>;
             layers = <0>;
+            timeout-ms = <80>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <41 23>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <41 11>;
             timeout-ms = <80>;
             layers = <0>;
         };
