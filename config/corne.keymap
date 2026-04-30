@@ -41,6 +41,20 @@
             timeout-ms = <80>;
             layers = <0>;
         };
+
+        colomn {
+            bindings = <&kp COLON>;
+            key-positions = <23 40>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <11 40>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
     };
 
     keymap {
