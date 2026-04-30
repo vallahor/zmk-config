@@ -7,10 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&kscan0 {
-    debounce-press-ms = <30>;
-    debounce-release-ms = <30>;
-};
+/* &kscan0 { */
+/*     debounce-press-ms = <30>; */
+/*     debounce-release-ms = <30>; */
+/* }; */
 
 &sk {
     quick-release;
@@ -25,6 +25,7 @@
             bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
             layers = <0>;
+            timeout-ms = <80>;
         };
     };
 
