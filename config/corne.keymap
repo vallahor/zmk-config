@@ -30,28 +30,35 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <41 23>;
-            timeout-ms = <80>;
-            layers = <0>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <41 11>;
+            key-positions = <41 22>;
             timeout-ms = <80>;
             layers = <0>;
         };
 
         colomn {
             bindings = <&kp COLON>;
-            key-positions = <23 40>;
+            key-positions = <40 22>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <41 10>;
             timeout-ms = <80>;
             layers = <0>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <11 40>;
+            key-positions = <40 10>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        enter_jkl {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21>;
             timeout-ms = <80>;
             layers = <0>;
         };
