@@ -55,13 +55,6 @@
             timeout-ms = <80>;
             layers = <0>;
         };
-
-        enter_jkl {
-            bindings = <&kp ENTER>;
-            key-positions = <19 20 21>;
-            timeout-ms = <80>;
-            layers = <0>;
-        };
     };
 
     keymap {
