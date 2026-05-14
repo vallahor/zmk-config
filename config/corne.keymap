@@ -64,14 +64,14 @@
         };
 
         shift_r {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <41 19>;
             timeout-ms = <80>;
             layers = <0>;
         };
 
         shift_l {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&sk LEFT_SHIFT>;
             key-positions = <36 16>;
             timeout-ms = <80>;
             layers = <0>;
