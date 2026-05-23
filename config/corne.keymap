@@ -27,34 +27,6 @@
             layers = <0>;
             timeout-ms = <80>;
         };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <41 22>;
-            timeout-ms = <80>;
-            layers = <0>;
-        };
-
-        colomn {
-            bindings = <&kp COLON>;
-            key-positions = <40 22>;
-            timeout-ms = <80>;
-            layers = <0>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <41 10>;
-            timeout-ms = <80>;
-            layers = <0>;
-        };
-
-        underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <40 10>;
-            timeout-ms = <80>;
-            layers = <0>;
-        };
     };
 
     keymap {
