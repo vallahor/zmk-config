@@ -27,6 +27,46 @@
             layers = <0>;
             timeout-ms = <80>;
         };
+
+        hml_gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <36 13>;
+        };
+
+        hml_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <36 14>;
+        };
+
+        hml_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <36 15>;
+        };
+
+        hml_shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <36 16>;
+        };
+
+        hmr_gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <41 22>;
+        };
+
+        hmr_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <21 41>;
+        };
+
+        hmr_ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <41 20>;
+        };
+
+        hmr_shift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <41 19>;
+        };
     };
 
     keymap {
