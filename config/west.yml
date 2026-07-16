@@ -2,7 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-
     - name: vallahor
       url-base: https://github.com/vallahor
 
