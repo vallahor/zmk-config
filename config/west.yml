@@ -15,5 +15,9 @@ manifest:
       remote: vallahor
       revision: main
 
+    - name: zmk-alternate-module
+      remote: vallahor
+      revision: main
+
   self:
     path: config
