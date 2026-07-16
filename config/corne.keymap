@@ -34,14 +34,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp D>,
+                <&macro_press &kp D>,
                 <&macro_wait_time 30000>,
-                <&macro_release>,
+                <&macro_release &kp D>,
                 <&macro_wait_time 100>,
-                <&macro_press>,
-                <&kp D>,
+                <&macro_press &kp D>,
                 <&macro_wait_time 30000>,
+                <&macro_release &kp D>,
                 <&macro_release>;
 
             label = "MACRO_HEHEHEHE";
