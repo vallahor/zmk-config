@@ -39,8 +39,8 @@
         alt_toggle: alt_toggle {
             compatible = "zmk,behavior-toggle-alternate";
             #binding-cells = <2>;
-            tap-ms = <90>;
-            hold-ms = <250>;
+            tap-ms = <60>;
+            hold-ms = <150>;
         };
     };
 
