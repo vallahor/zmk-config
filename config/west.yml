@@ -9,5 +9,9 @@ manifest:
       revision: main
       import: app/west.yml
 
+    - name: zmk-repeat-hold-module
+      remote: vallahor
+      revision: main
+
   self:
     path: config
