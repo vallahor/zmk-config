@@ -3,6 +3,9 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
 
+    - name: vallahor
+      url-base: https://github.com/vallahor
+
   projects:
     - name: zmk
       remote: zmkfirmware
