@@ -40,7 +40,7 @@
             compatible = "zmk,behavior-toggle-alternate";
             #binding-cells = <2>;
             tap-ms = <60>;
-            hold-ms = <150>;
+            hold-ms = <200>;
         };
     };
 
