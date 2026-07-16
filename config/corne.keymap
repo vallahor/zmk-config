@@ -37,7 +37,7 @@
                 <&macro_press>,
                 <&kp D>,
                 <&macro_wait_time 30000>,
-                <&macro_release>;
+                <&macro_release>,
                 <&macro_wait_time 100>,
                 <&macro_press>,
                 <&kp D>,
