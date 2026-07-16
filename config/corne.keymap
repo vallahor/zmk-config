@@ -31,20 +31,913 @@
 
     macros {
         SIA_MAPLE: SIA_MAPLE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp D>,
-                <&macro_wait_time 50>,
-                <&macro_release &kp D>,
-                <&macro_wait_time 200>,
-                <&macro_press &kp UP_ARROW>,
-                <&macro_wait_time 50>,
-                <&macro_release &kp UP_ARROW>,
-                <&macro_wait_time 300>;
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+            <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>
+            , <&macro_tap &kp D>
+            , <&macro_wait_time 2000>;
 
             label = "SIA_MAPLE";
         };
+
     };
 
     keymap {
