@@ -33,7 +33,7 @@
         repeat_hold: repeat_hold {
             compatible = "zmk,behavior-repeat-hold";
             #binding-cells = <1>;
-            interval-ms = 40000;
+            interval-ms = <40000>;
         };
     };
 
