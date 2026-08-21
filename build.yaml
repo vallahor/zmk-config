@@ -20,5 +20,13 @@
 include:
   - board: nice_nano@2.0.0//zmk
     shield: corne_left
+    artifact-name: decatyl-corne-left
   - board: nice_nano@2.0.0//zmk
     shield: corne_right
+    artifact-name: decatyl-corne-right
+  - board: nice_nano@2.0.0//zmk
+    shield: temper_left
+    artifact-name: temper-left
+  - board: nice_nano@2.0.0//zmk
+    shield: temper_right
+    artifact-name: temper-right

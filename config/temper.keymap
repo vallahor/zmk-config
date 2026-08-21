@@ -1,0 +1,5 @@
+/*
+ * Shared 36-key keymap. The Temper shield supplies its own matrix transform.
+ */
+
+#include "shared_36key.dtsi"
