@@ -22,6 +22,18 @@
         };
     };
 
+    behaviors {
+        repeatable_symbol: repeatable_symbol {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <0>;
+            hold-trigger-key-positions = <>;
+            bindings = <&kp>, <&quick_tap>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -47,9 +59,9 @@
 
         sym_layer {
             bindings = <
-&quick_tap EXCLAMATION  &quick_tap PERCENT       &quick_tap AMPERSAND      &quick_tap HASH    &kp GRAVE  &kp SINGLE_QUOTE  &quick_tap DOUBLE_QUOTES  &quick_tap LEFT_PARENTHESIS  &quick_tap RIGHT_PARENTHESIS  &quick_tap UNDERSCORE
-&quick_tap AT_SIGN      &kp LEFT_BRACKET          &kp RIGHT_BRACKET         &kp EQUAL           &none      &quick_tap CARET   &quick_tap ASTERISK         &quick_tap LEFT_BRACE         &quick_tap RIGHT_BRACE         &quick_tap COLON
-&quick_tap TILDE        &kp MINUS                 &quick_tap PLUS           &quick_tap DOLLAR    &none      &kp BACKSLASH      &quick_tap PIPE             &quick_tap LESS_THAN          &quick_tap GREATER_THAN       &quick_tap QUESTION
+&repeatable_symbol EXCLAMATION EXCLAMATION  &repeatable_symbol PERCENT PERCENT       &repeatable_symbol AMPERSAND AMPERSAND      &repeatable_symbol HASH HASH    &kp GRAVE  &kp SINGLE_QUOTE  &repeatable_symbol DOUBLE_QUOTES DOUBLE_QUOTES  &repeatable_symbol LEFT_PARENTHESIS LEFT_PARENTHESIS  &repeatable_symbol RIGHT_PARENTHESIS RIGHT_PARENTHESIS  &repeatable_symbol UNDERSCORE UNDERSCORE
+&repeatable_symbol AT_SIGN AT_SIGN          &kp LEFT_BRACKET                       &kp RIGHT_BRACKET                          &kp EQUAL                    &none      &repeatable_symbol CARET CARET    &repeatable_symbol ASTERISK ASTERISK         &repeatable_symbol LEFT_BRACE LEFT_BRACE         &repeatable_symbol RIGHT_BRACE RIGHT_BRACE         &repeatable_symbol COLON COLON
+&repeatable_symbol TILDE TILDE              &kp MINUS                              &repeatable_symbol PLUS PLUS               &repeatable_symbol DOLLAR DOLLAR  &none      &kp BACKSLASH                     &repeatable_symbol PIPE PIPE              &repeatable_symbol LESS_THAN LESS_THAN          &repeatable_symbol GREATER_THAN GREATER_THAN       &repeatable_symbol QUESTION QUESTION
                                    &trans             &trans      &trans     &trans         &trans             &trans
             >;
         };
