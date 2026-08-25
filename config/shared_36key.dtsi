@@ -89,7 +89,7 @@
 
         pc_num_layer {
             bindings = <
-&kp LC(LS(TAB))  &kp LS(TAB)  &kp TAB  &kp LC(TAB)  &none   &none   &kp N7  &kp N8  &kp N9  &none
+&kp LC(LS(TAB))  &kp LA(LS(TAB))  &kp LA(TAB)  &kp LC(TAB)  &none   &none   &kp N7  &kp N8  &kp N9  &none
 &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE     &none   &kp N4  &kp N5  &kp N6  &kp N0
 &kp LC(Z)     &kp LC(X)     &kp LC(C)         &kp LC(V)       &kp SPACE      &none   &kp N1  &kp N2  &kp N3  &none
                               &trans            &trans          &trans         &trans  &trans  &trans
@@ -105,20 +105,20 @@
             >;
         };
 
-        /* Transparent keys fall through to the PC base; only the thumbs differ. */
+        /* Transparent keys fall through to the PC base; layer selectors differ. */
         mac_base_layer {
             bindings = <
 &trans  &trans  &trans  &trans       &trans              &trans          &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans       &trans              &trans          &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans       &trans              &trans          &trans  &trans     &trans  &trans
-                &mo MAC_NUM  &trans  &kp LEFT_GUI        &trans          &trans  &mo MAC_NAV
+                &mo MAC_NUM  &trans  &kp LEFT_CONTROL    &trans          &trans  &mo MAC_NAV
             >;
         };
 
         mac_nav_layer {
             bindings = <
 &none         &none         &none             &caps_word      &kp LG(T)      &kp PAGE_UP    &kp HOME           &kp UP_ARROW    &kp END          &kp TAB
-&kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE     &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
+&sk LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE     &kp PAGE_DOWN  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER
 &kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)       &kp SPACE      &none          &kp LA(BACKSPACE)  &kp BACKSPACE   &kp DELETE       &kp LA(DELETE)
                               &trans            &trans          &trans         &trans         &trans             &trans
             >;
@@ -126,8 +126,8 @@
 
         mac_num_layer {
             bindings = <
-&kp LC(LS(TAB))  &kp LS(TAB)  &kp TAB  &kp LC(TAB)  &none   &none   &kp N7  &kp N8  &kp N9  &none
-&kp LEFT_GUI     &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE       &none   &kp N4  &kp N5  &kp N6  &kp N0
+&kp LC(LS(TAB))  &kp LG(LS(TAB))  &kp LG(TAB)  &kp LC(TAB)  &none   &none   &kp N7  &kp N8  &kp N9  &none
+&sk LEFT_GUI     &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp ESCAPE       &none   &kp N4  &kp N5  &kp N6  &kp N0
 &kp LG(Z)        &kp LG(X)     &kp LG(C)         &kp LG(V)       &kp SPACE        &none   &kp N1  &kp N2  &kp N3  &none
                                   &trans            &trans          &trans           &trans  &trans  &trans
             >;
